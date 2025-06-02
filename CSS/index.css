@@ -1,0 +1,42 @@
+@keyframes shrinkRight {
+    0% {
+        width: 100%;
+    }
+
+    5% {
+        width: 100%;
+    }
+
+    50% {
+        width: 0%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    position: relative;
+}
+.title img{
+    width: calc(var(--widthUnit) * 3)
+}
+
+.concealer {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--color1);
+    animation: shrinkRight 10s linear;
+}
