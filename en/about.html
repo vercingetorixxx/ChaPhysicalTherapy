@@ -12,19 +12,31 @@
 
 <body>
 
-    <nav>
+    <nav class="mainNav">
         <img src="../media/images/chaLogo.webp"/>
         <div class="links">
             <a class="link">Treatments</a>
             <a class="link">About Us</a>
-            <a class="link book">Book a Session</a>
+            <a class="link book"><span class="bold book">Book a Session</span></a>
+        </div>
+    </nav>
+
+    <input id="hamToggle" type="checkbox" style="display: none">
+    <label class="hamIcon" for="hamToggle">
+        <div class="hamLine"></div><div class="hamLine"></div><div class="hamLine"></div>
+    </label>
+
+    <nav class="hamburger" aria-label="Small-screen navigation">
+        <div class="hamlinks">
+            <a class="hamLink">Treatments</a>
+            <a class="hamLink">About Us</a>
         </div>
     </nav>
 
     <main>
 
-        <div class="vidContianer">
-            <video autoplay muted>
+        <div class="vidContainer">
+            <video autoplay loop muted>
                 <source src="../media/videos/sampleVideo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -34,7 +46,50 @@
             </div>
         </div>
 
+        <div class="vidContainer">
+            <video autoplay loop muted disablePictureInPicture>
+                <source src="../media/videos/sampleVideo2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="coverText" id="two">
+                <div class="header">Full Body Restoration</div>
+                <p>Receive a fully hands-on therapeutic experience through our 
+                    signature Cha Method—a refined fusion of evidence-based techniques 
+                    and integrative healing methods. This unique approach is designed 
+                    not just to treat symptoms, but to restore the body’s natural 
+                    harmony, elevate performance, and enhance overall quality of 
+                    life.</p>
+                <a>Learn More</a>
+            </div>
+        </div>
+
+        <div class="vidContainer">
+            <video autoplay loop muted>
+                <source src="../media/videos/sampleVideo3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="coverText" id="three">
+                <div class="header">Life Starts Here.</div>
+                <div>We’re on this journey to recovery together with you.</div>
+            </div>
+        </div>
+
+        <div class="vidContainer">
+            <video autoplay loop muted>
+                <source src="../media/videos/sampleVideo4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="coverText" id="four">
+                <div class="header">Life Starts Here.</div>
+                <div>We’re on this journey to recovery together with you.</div>
+            </div>
+        </div>
+        
+
     </main>
+
+    <footer>
+    </footer>
 
 </body>
 </html>
