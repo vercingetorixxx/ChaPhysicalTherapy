@@ -50,7 +50,7 @@ body{
 .mainNav img{
     height: var(--halfUnit);
     background: var(--color2);
-    padding: 5px;
+    padding: 5px 25px;
 }
 
 .links{
@@ -113,6 +113,13 @@ video{
 .header{
     font-size: 3rem;
     font-weight: bold;
+}
+
+.header2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
 }
 
 .bold{
@@ -196,7 +203,7 @@ video{
     margin-bottom: var(--halfUnit);
 }
 
-#two {
+.two {
     background: var(--color2);
     color: var(--color1);
     padding: 20px;
@@ -205,17 +212,17 @@ video{
     left: 80%;
 }
 
-#two .header{
+.two .header{
     text-align: right;
 }
 
-#two p{
+.two p{
     margin: var(--eighthUnit) 0;
     line-height: 1.5rem;
     text-align: left;
 }
 
-#two a{
+.two a{
     display: flex;
     margin: 0 auto;
     width: 80%;
@@ -229,10 +236,65 @@ video{
     font-weight: bold;
 }
 
+.three{
+    left: 20%;
+    width: 340px;
+}
+
+.three .header{
+    text-align: left;
+}
+
+.three p{
+    text-align: left;
+}
+
+form {
+    display: grid;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    height: 60%;
+    width: 30%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 footer {
     width: var(--screenWidth);
-    height: calc(var(--screenHeight) / 4);
+    height: fit-content;
     background: var(--color1);
-    display: flex;
     border-top: 1px solid var(--color2);
+    padding: var(--halfUnit) var(--unit);
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer *{
+    width: fit-content;
+}
+
+.footerTitle *{
+    width: 100%;
+    text-align: right;
+}
+
+.footerTitle .header{
+    margin-bottom: 0.5rem;
+}
+
+.footerLocation *:not(.header2), .footerContact *:not(.header2){
+    margin-bottom: 0.5rem;
+}
+
+.footerInfo :first-child{
+    margin-right: var(--unit);
+}
+
+.footerInfo{
+    width: fit-content;
+    display: flex;
 }
