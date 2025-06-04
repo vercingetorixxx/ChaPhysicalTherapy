@@ -1,39 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | ChaPT</title>
-  <link href = "../CSS/normalize.css" rel="stylesheet">
-  <link href = "../CSS/styles.css" rel="stylesheet"/>
-  <link href = "../CSS/about.css" rel="stylesheet"/>
-  <link rel="icon" type="image/x-icon" href="../media/images/favicon.ico"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | ChaPT</title>
+    <link href="../CSS/normalize.css" rel="stylesheet">
+    <link href="../CSS/styles.css" rel="stylesheet" />
+    <link href="../CSS/hamburger.css" rel="stylesheet">
+    <link href="../CSS/about.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../media/images/favicon.ico" />
 </head>
 
 <body>
 
-    <nav class="mainNav">
-        <img src="../media/images/chaLogo.webp"/>
-        <div class="links">
-            <a class="link">Treatments</a>
-            <a class="link">About Us</a>
-            <a class="link book"><span class="bold book">Book a Session</span></a>
+    <nav>
+        <div class="contactBar">
+            <a class="phoneNumber">000-000-0000</a>
+            <a class="contact">Contact</a>
         </div>
-    </nav>
-
-    <input id="hamToggle" type="checkbox" style="display: none">
-    <label class="hamIcon" for="hamToggle">
-        <div class="hamLine"></div><div class="hamLine"></div><div class="hamLine"></div>
-    </label>
-
-    <nav class="hamburger" aria-label="Small-screen navigation">
-        <div class="hamlinks">
-            <a class="hamLink">Treatments</a>
-            <a class="hamLink">About Us</a>
+        <div class="navigation">
+            <div class="logoContainer">
+                <img src="../media/images/chaLogo.webp" />
+            </div>
+            <div class="navContainer">
+                <div class="book">
+                    Book Now
+                </div>
+                <input id="hamToggle" type="checkbox" autocomplete="off">
+                <label class="hamIcon" for="hamToggle">
+                    <div class="hamLine"></div>
+                    <div class="hamLine"></div>
+                    <div class="hamLine"></div>
+                </label>
+            </div>
+        </div>
+        <div class="hamburger">
+            <div class="hamItem">
+                <div class="hamText">Locations</div>
+                <div class="plusButton">+</div>
+            </div>
+            <div class="hidden">
+                <a>Location 1</a>
+                <a>Location 2</a>
+                <a>Location 3</a>
+            </div>
+            <div class="hamItem">
+                <div class="hamText">Take a tour</div>
+            </div>
+            <div class="hamItem">
+                <div class="hamText">Treatments</div>
+                <div class="plusButton">+</div>
+            </div>
+            <div class="hidden">
+                <a>Movement & Neuromuscular Disorders</a>
+                <a>Pain, Recovery, & Rehabilitation</a>
+                <a>Specialized Wellness Programs</a>
+            </div>
+            <div class="hamItem">
+                <div class="hamText">Services</div>
+                <div class="plusButton">+</div>
+            </div>
+            <div class="hidden">
+                <a>Service 1</a>
+                <a>Service 2</a>
+                <a>Service 3</a>
+            </div>
+            <div class="hamItem">
+                <div class="hamText">About</div>
+            </div>
+            <div class="hamItem">
+                <div class="hamText">Careers</div>
+            </div>
         </div>
     </nav>
 
     <main>
+
+        <div class="frontDesk">
+            <img class="media" src="../media/images/frontDesk.webp"/>
+            <div class="title">
+                <div>Life Starts Here.</div>
+                <div>We’re on this journey to recovery together with you.</div>
+            </div>
+        </div>
 
         <div class="vidContainer">
             <video autoplay loop muted>
@@ -63,63 +113,10 @@
             </div>
         </div>
 
-        <div class="vidContainer">
-            <video autoplay loop muted>
-                <source src="../media/videos/sampleVideo3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="coverText two three">
-                <div class="header">Book an Appointment</div>
-                <p>Discover the benefits of physical therapy at CHA Physical Therapy. 
-                    Your health is our priority, and we support your recovery and 
-                    quality of life. We’re on this journey with you to renewed 
-                    strength and wellness together.
-                <p>Please fill out this form to get started and our team will connect 
-                    with you shortly to confirm your booking.</p>
-                <p>Please note that insurance acceptance and new patient availability 
-                    vary by provider and plan.</p>
-                <p>Should you require immediate care, please call us directly to 
-                    inquire about same-day availability.</p>
-            </div>
-            <form>
-            </form>
-        </div>
-
-        <div class="vidContainer">
-            <video autoplay loop muted>
-                <source src="../media/videos/sampleVideo4.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="coverText" id="four">
-                <div class="header">Life Starts Here.</div>
-                <div>We’re on this journey to recovery together with you.</div>
-            </div>
-        </div>
-        
-
     </main>
 
-    <footer>
-        <div class="footerContent">
-            <div class="footerInfo">
-                <div class="footerContact">
-                    <div class="header2">Contact</div>
-                    <div>E: chaphysicaltherapy@gmail.com</div>
-                    <div>P: (646) 580-2934</div>
-                    <div>F: 212-643-9330</div>
-                    <div>Clinic Hours: 9AM - 7PM</div>
-                </div>
-                <div class="footerLocation">
-                    <div class="header2">Location</div>
-                    <div>16 W 32nd Street, Suite 1007, NYC 10001</div>
-                </div>
-            </div>
-            <div class="footerTitle">
-                <div class="header">CHA Physical Therapy</div>
-                <div class="subTitle"> Life Starts Here.</div>
-            </div>
-        </div>
-    </footer>
+    <script src="../JS/hamburger.js"></script>
 
 </body>
+
 </html>
