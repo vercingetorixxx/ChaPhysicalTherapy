@@ -37,6 +37,37 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: var(--color1);
+    background-color: var(--color2);
     animation: shrinkRight 10s linear;
+    border: 1px solid black;
+}
+
+@media (max-width: 1250px) {
+    .title img{
+        width: calc(var(--widthUnit) * 4);
+    }
+}
+
+@media (max-width: 1050px) {
+    .title img{
+        width: calc(var(--widthUnit) * 5);
+    }
+}
+
+@media (max-width: 850px) {
+    .title img{
+        width: calc(var(--widthUnit) * 6);
+    }
+}
+
+@media (max-width: 650px) {
+    .title img{
+        width: calc(var(--widthUnit) * 7);
+    }
+}
+
+@media (max-width: 450px) {
+    .title img{
+        width: calc(var(--widthUnit) * 8);
+    }
 }
