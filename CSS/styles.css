@@ -1,12 +1,19 @@
-:root{
+:root {
     --color1: #FCFAF7;
-    --color2: #F2DDBD; /* Light Peach */
-    --color3: #7A9CC6; /* Soft Blue */
-    --color4: #75A996; /* Soft Green */
-    --color5: #333333; /* Dark Neutral Gray */
-    --color6: #05294F; /* Logo, HamIcon */
-    --color7: #55BDC9; /* Contact Bar */
-    --color8: #DF632B; /* CTA */
+    --color2: #F2DDBD;
+    /* Light Peach */
+    --color3: #7A9CC6;
+    /* Soft Blue */
+    --color4: #75A996;
+    /* Soft Green */
+    --color5: #333333;
+    /* Dark Neutral Gray */
+    --color6: #05294F;
+    /* Logo, HamIcon */
+    --color7: #55BDC9;
+    /* Contact Bar */
+    --color8: #DF632B;
+    /* CTA */
     --unit: 10vh;
     --halfUnit: calc(var(--unit) / 2);
     --quarterUnit: calc(var(--unit) / 4);
@@ -20,8 +27,8 @@
     --linkMargin: var(--quarterWidthUnit);
 }
 
-@supports(height: 1svh){
-    :root{
+@supports(height: 1svh) {
+    :root {
         --unit: 10svh;
         --widthUnit: 10svw;
         --screenHeight: 100svh;
@@ -31,60 +38,68 @@
 
 
 @font-face {
-  font-family: 'marcellus';
-  src: url('../fonts/Marcellus/Marcellus-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'marcellus';
+    src: url('../fonts/Marcellus/Marcellus-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'pt_serif';
-  src: url('../fonts/PT_Serif/PTSerif-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'pt_serif';
+    src: url('../fonts/PT_Serif/PTSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'pt_serif';
-  src: url('../fonts/PT_Serif/PTSerif-Bold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
+    font-family: 'pt_serif';
+    src: url('../fonts/PT_Serif/PTSerif-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'pt_serif';
-  src: url('../fonts/PT_Serif/PTSerif-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
+    font-family: 'pt_serif';
+    src: url('../fonts/PT_Serif/PTSerif-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: 'pt_serif';
-  src: url('../fonts/PT_Serif/PTSerif-BoldItalic.ttf') format('truetype');
-  font-weight: 600;
-  font-style: italic;
+    font-family: 'pt_serif';
+    src: url('../fonts/PT_Serif/PTSerif-BoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
 }
 
 
-*{
+* {
     box-sizing: border-box;
     font-family: pt_serif;
     color: var(--color1);
 }
 
-body{
+body {
     background: var(--color1);
     width: var(--screenWidth);
 }
 
-nav{
+nav {
     position: fixed;
     top: 0;
     height: 90px;
     z-index: 5;
 }
 
-.contactBar{
+p {
+    margin: 0;
+}
+
+span.bold{
+    font-weight: bold;
+}
+
+.contactBar {
     width: var(--screenWidth);
     background: var(--color7);
     color: var(--color1);
@@ -96,7 +111,8 @@ nav{
     font-weight: bold;
     height: 35%;
 }
-.navigation{
+
+.navigation {
     width: var(--screenWidth);
     padding: 0 15px;
     position: relative;
@@ -104,8 +120,14 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 65%;
+    transition: background 0.5s ease;
 }
-.logoContainer{
+
+.transBg{
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.logoContainer {
     background: var(--color6);
     display: flex;
     justify-content: center;
@@ -114,16 +136,17 @@ nav{
     height: 40px;
     border-radius: 3px 25px;
 }
-.navigation img{
+
+.navigation img {
     width: 100px;
 }
 
-.navContainer{
+.navContainer {
     display: flex;
     align-items: center;
 }
 
-.book{
+.book {
     background: var(--color8);
     width: fit-content;
     height: 40px;
@@ -135,13 +158,13 @@ nav{
     margin-right: 20px;
 }
 
-main{
+main {
     margin-top: 31.5px;
     width: var(--screenWidth);
     overflow-x: hidden;
 }
 
-.frontDesk{
+.frontDesk {
     height: calc(var(--screenHeight) - 31.5px);
     width: var(--screenWidth);
     display: flex;
@@ -149,14 +172,14 @@ main{
     position: relative;
 }
 
-.frontDesk .media{
+.frontDesk .media {
     height: calc(var(--screenHeight) - 31.5px);
     width: var(--screenWidth);
     min-width: 600px;
     filter: brightness(0.7);
 }
 
-.title{
+.textBox {
     color: white;
     position: absolute;
     top: 50%;
@@ -165,21 +188,89 @@ main{
     text-align: center;
 }
 
-.title :first-child{
+.textBox.two,
+.textBox.three {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 5px 60px;
+}
+
+.textBox.three {
+    border-radius: 60px 5px;
+}
+
+.textBox .title {
     font-size: 3rem;
     margin-bottom: var(--eighthUnit);
 }
 
-.vidContainer{
+.textBox :nth-child(2) {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+}
+
+.textBox a {
+    display: inline-block;
+    margin-top: var(--quarterUnit);
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    color: black;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.vidContainer {
     position: relative;
     width: var(--screenWidth);
-    height: calc(var(--screenHeight) - 31.5px);
+    height: calc(100vh - 31.5px);
     overflow-y: hidden;
 }
 
-video{
+.vidContainer .media {
     width: var(--screenWidth);
-    height: calc(var(--screenHeight) - 31.5px);
+    height: calc(100vh - 31.5px);
     object-fit: cover;
     display: block;
+    filter: brightness(0.7);
+}
+
+.textBox.three .title {
+    font-size: 2.5rem;
+}
+
+.textBox p {
+    margin-bottom: 0.25rem;
+}
+
+
+
+footer {
+    width: var(--screenWidth);
+    height: fit-content;
+    background: var(--color1);
+    padding: var(--halfUnit) var(--halfUnit) calc(var(--unit) * 0.8) var(--halfUnit);
+    overflow: hidden;
+    position: relative;
+}
+
+footer .title{
+    font-size: 1.8rem;
+    margin-bottom: var(--eighthUnit);
+}
+
+footer *{
+    color: black;
+}
+
+.footerTitle{
+    text-align: right;
+    margin-bottom: var(--halfUnit);
+}
+
+.footerInfo{
+    line-height: 1.4rem;
+}
+
+footer h3{
+    margin: var(--halfUnit) 0 var(--eighthUnit) 0;
 }

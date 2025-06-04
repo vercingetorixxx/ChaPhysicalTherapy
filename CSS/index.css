@@ -25,10 +25,10 @@ body {
     height: 100vh;
 }
 
-.title {
+.textBox {
     position: relative;
 }
-.title img{
+.textBox img{
     width: calc(var(--widthUnit) * 3)
 }
 
@@ -43,31 +43,31 @@ body {
 }
 
 @media (max-width: 1250px) {
-    .title img{
+    .textBox img{
         width: calc(var(--widthUnit) * 4);
     }
 }
 
 @media (max-width: 1050px) {
-    .title img{
+    .textBox img{
         width: calc(var(--widthUnit) * 5);
     }
 }
 
 @media (max-width: 850px) {
-    .title img{
+    .textBox img{
         width: calc(var(--widthUnit) * 6);
     }
 }
 
 @media (max-width: 650px) {
-    .title img{
+    .textBox img{
         width: calc(var(--widthUnit) * 7);
     }
 }
 
 @media (max-width: 450px) {
-    .title img{
+    .textBox img{
         width: calc(var(--widthUnit) * 8);
     }
 }
