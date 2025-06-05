@@ -26,7 +26,6 @@
     --screenWidth: 100vw;
     --linkMargin: var(--quarterWidthUnit);
     --contactBarHeight: 31.5px;
-    --maxScreenHeight: 100vh;
 }
 
 @supports(height: 1svh) {
@@ -286,11 +285,11 @@ footer .text{
 
 #musicPlayer{
     position: fixed;
-    left: 0;
+    right: 0;
     bottom: 0;
     width: 30px;
     height: 30px;
-    border-radius: 0 70% 0 0;
+    border-radius: 70% 0 0 0;
     background: var(--color7);
     display: flex;
     justify-content: center;
@@ -301,7 +300,7 @@ footer .text{
 #musicPlayer img{
     position: fixed;
     bottom: 4px;
-    left: 2.5px;
+    right: 2.5px;
     width: 20px;
     height: 20px;
     z-index: 1;
@@ -310,21 +309,21 @@ footer .text{
 .musicLine{
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: start;
     position: fixed;
     bottom: 0px;
-    left: -134px;
+    right: -134px;
     width: 164px;
     height: 20px;
     background-color: var(--color7);
     color: var(--color1);
     font-size: 0.7rem;
-    padding-right: 6px;
-    border-radius: 0 10px 0 0;
-    transition: left 2s ease;
+    padding-left: 6px;
+    border-radius: 10px 0 0 0;
+    transition: right 2s ease;
     padding-top: 1px;
 }
 
 .musicLine.show{
-    left: 0px;
+    right: 0px;
 }
