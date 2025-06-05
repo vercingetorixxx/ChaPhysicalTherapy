@@ -21,10 +21,11 @@
     --widthUnit: 10vw;
     --halfWidthUnit: calc(var(--widthUnit) / 2);
     --quarterWidthUnit: calc(var(--widthUnit) / 4);
-    --navHeight: var(--halfUnit);
+    --navHeight: 58.5px;
     --screenHeight: 100vh;
     --screenWidth: 100vw;
     --linkMargin: var(--quarterWidthUnit);
+    --contactBarHeight: 31.5px;
 }
 
 @supports(height: 1svh) {
@@ -110,7 +111,7 @@ span.bold{
     align-items: center;
     font-size: 0.8rem;
     font-weight: bold;
-    height: 35%;
+    height: var(--contactBarHeight);
 }
 
 .navigation {
@@ -120,7 +121,7 @@ span.bold{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 65%;
+    height: var(--navHeight);
     transition: background 0.5s ease;
 }
 
@@ -160,13 +161,13 @@ span.bold{
 }
 
 main {
-    margin-top: 31.5px;
+    margin-top: var(--contactBarHeight);
     width: var(--screenWidth);
     overflow-x: hidden;
 }
 
 .frontDesk {
-    height: calc(var(--screenHeight) - 31.5px);
+    height: calc(var(--screenHeight) - var(--contactBarHeight));
     width: var(--screenWidth);
     display: flex;
     justify-content: center;
@@ -174,7 +175,7 @@ main {
 }
 
 .frontDesk .media {
-    height: calc(var(--screenHeight) - 31.5px);
+    height: calc(var(--screenHeight) - var(--contactBarHeight));
     width: var(--screenWidth);
     min-width: 600px;
     filter: brightness(0.7);
@@ -223,13 +224,13 @@ main {
 .vidContainer {
     position: relative;
     width: var(--screenWidth);
-    height: calc(100vh - 31.5px);
+    height: calc(100vh - var(--contactBarHeight));
     overflow-y: hidden;
 }
 
 .vidContainer .media {
     width: var(--screenWidth);
-    height: calc(100vh - 31.5px);
+    height: calc(100vh - var(--contactBarHeight));
     object-fit: cover;
     display: block;
     filter: brightness(0.7);
@@ -278,32 +279,45 @@ footer h3{
 
 #musicPlayer{
     position: fixed;
-    left: 10px;
-    bottom: 10px;
+    left: 0;
+    bottom: 0;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+    border-radius: 0 70% 0 0;
     background: var(--color7);
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 #musicPlayer img{
+    position: fixed;
+    bottom: 4px;
+    left: 2.5px;
     width: 20px;
     height: 20px;
+    z-index: 1;
 }
 
 .musicLine{
-    display: none;
-    position: absolute;
-    top: 14px;
-    width: 100%;
-    height: 2.5px;
-    background-color: var(--color1);
-    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: fixed;
+    bottom: 0px;
+    left: -134px;
+    width: 164px;
+    height: 20px;
+    background-color: var(--color7);
+    color: var(--color1);
+    font-size: 0.7rem;
+    padding-right: 6px;
+    border-radius: 0 10px 0 0;
+    transition: left 2s ease;
+    padding-top: 1px;
 }
 
 .musicLine.show{
-    display: inline-block;
+    left: 0px;
 }
