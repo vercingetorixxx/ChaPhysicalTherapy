@@ -1,3 +1,11 @@
+// hamLine bug fix
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('hamToggle').checked = false;
+});
+
+
+
 // hamburger menu
 
 const hamToggle = document.getElementById('hamToggle');
@@ -15,8 +23,9 @@ hamToggle.addEventListener('click', () => {
     };
 });
 
-// plusButtons
 
+
+// plusButtons
 
 const plusButtons = document.querySelectorAll('.plusButton');
 
@@ -29,8 +38,8 @@ plusButtons.forEach(button => {
 });
 
 
-// Dynamic Navbar
 
+// Dynamic Navbar
 
 const threshold = window.innerHeight / 10;
 
