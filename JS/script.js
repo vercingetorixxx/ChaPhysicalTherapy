@@ -18,8 +18,8 @@ musicPlayer.addEventListener('click', () => {
 });
 
 
-// Video Error Refresh
 
+// Video Error Refresh
 
 document.addEventListener('DOMContentLoaded', () => {
     const video = document.querySelector('video');
@@ -38,12 +38,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, 5000); // Wait 5 seconds to allow loading
 });
-
-const refreshCount = parseInt(localStorage.getItem('refreshCount') || '0');
-if (refreshCount < 3) {
-    localStorage.setItem('refreshCount', refreshCount + 1);
-    location.reload();
-} else {
-    console.log('Max refresh attempts reached.');
-    localStorage.removeItem('refreshCount'); // Reset after max attempts
-};
