@@ -26,6 +26,7 @@
     --screenWidth: 100vw;
     --linkMargin: var(--quarterWidthUnit);
     --contactBarHeight: 31.5px;
+    --maxScreenHeight: 100vh;
 }
 
 @supports(height: 1svh) {
@@ -247,36 +248,41 @@ main {
 
 
 
-footer {
+.footerContent {
     width: var(--screenWidth);
     height: fit-content;
-    background: var(--color1);
-    padding: var(--halfUnit) var(--halfUnit) calc(var(--unit) * 0.7) var(--halfUnit);
+    padding: var(--halfUnit) 0 0 0;
     overflow: hidden;
     position: relative;
 }
 
-footer .title{
-    font-size: 1.8rem;
-    margin-bottom: var(--eighthUnit);
-}
-
-footer *{
+.footerContent * {
     color: black;
-}
-
-.footerTitle{
-    text-align: right;
-    margin-bottom: var(--halfUnit);
 }
 
 .footerInfo{
     line-height: 1.4rem;
+    padding: 0 var(--halfUnit) var(--halfUnit) var(--halfUnit);
+}
+
+.footerInfo.location{
+    text-align: end;
 }
 
 footer h3{
-    margin: var(--halfUnit) 0 var(--eighthUnit) 0;
+    margin: 0 0 0 0;
 }
+
+footer .textBox * {
+    color: white;
+}
+footer .text{
+    margin-top: var(--halfUnit);
+    font-size: 1.3rem !important;
+}
+
+
+
 
 #musicPlayer{
     position: fixed;

@@ -63,7 +63,7 @@ body.menu-open {
     bottom: 0;
     left: 0;
     width: var(--screenWidth);
-    height: calc(var(--screenHeight) - 90px);
+    height: calc(var(--maxScreenHeight) - 90px);
     border-top: 1px solid #F2DDBD;
     background: var(--color1);
     overflow-y: auto;
