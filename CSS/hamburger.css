@@ -65,17 +65,21 @@ body.menu-open {
     width: var(--screenWidth);
     height: calc(var(--screenHeight) - 90px);
     border-top: 1px solid #F2DDBD;
-    background: rgba(255,255,255,1);
+    background: var(--color1);
     overflow-y: auto;
     z-index: 10;
 
     display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+
+    transform: translateY(100%);
+    transition: transform 1.3s ease;
+
+    border-radius: 25px 25px 0 0;
 }
 
 .hamburger.show{
-    opacity: 1;
+    transform: translateY(0);
+    bottom: 0;
 }
 
 .hamItem{

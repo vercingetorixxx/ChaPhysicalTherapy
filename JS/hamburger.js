@@ -12,7 +12,7 @@ hamToggle.addEventListener('click', () => {
         hamburger.classList.remove('show');
         setTimeout(() => {
             hamburger.style.display = 'none';
-        }, 500);
+        }, 1300);
     }
     else {
         hamburger.style.display = 'block';

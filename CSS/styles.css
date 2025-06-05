@@ -123,6 +123,7 @@ span.bold{
     align-items: center;
     height: var(--navHeight);
     transition: background 0.5s ease;
+    border-radius: 0 0 25px 25px;
 }
 
 .bg{
