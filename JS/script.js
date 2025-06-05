@@ -1,3 +1,16 @@
+// Cache-Busting Method
+
+document.addEventListener('DOMContentLoaded', () => {
+    const videoSources = document.querySelectorAll('video source');
+    const timestamp = new Date().getTime(); // Generates a unique timestamp
+    videoSources.forEach(videoSource => {
+        videoSource.src = `${videoSource.src.split('?')[0]}?t=${timestamp}`; // Append timestamp to URL
+        videoSource.parentElement.load(); // Reload video with new source
+    });
+});
+
+
+
 // Music Player
 
 const musicPlayer = document.getElementById('musicPlayer');
@@ -21,16 +34,16 @@ musicPlayer.addEventListener('click', () => {
 
 // Video Error Refresh Fix
 
-document.addEventListener('DOMContentLoaded', () => {
-    const videos = document.querySelectorAll('video');
+// document.addEventListener('DOMContentLoaded', () => {
+//     const videos = document.querySelectorAll('video');
 
-    // Detect errors during loading
-    videos.forEach(video => {
-        video.addEventListener('error', () => {
-            console.log('Video failed to load. Refreshing page...');
-            location.reload();
-        });
-    });
+//     // Detect errors during loading
+//     videos.forEach(video => {
+//         video.addEventListener('error', () => {
+//             console.log('Video failed to load. Refreshing page...');
+//             location.reload();
+//         });
+//     });
 
     // // Check if the video is ready after a timeout
     // setTimeout(() => {
@@ -39,4 +52,4 @@ document.addEventListener('DOMContentLoaded', () => {
     //         location.reload();
     //     }
     // }, 5000); // Wait 5 seconds to allow loading
-});
+// });
