@@ -10,15 +10,8 @@ hamToggle.addEventListener('click', () => {
 
     if (hamburger.classList.contains('show')) {
         hamburger.classList.remove('show');
-        setTimeout(() => {
-            hamburger.style.display = 'none';
-        }, 1300);
-    }
-    else {
-        hamburger.style.display = 'block';
-        setTimeout(() => {
-            hamburger.classList.add('show');
-        }, 1); // 1ms delay to allow "display: block" to render before opacity transition
+    } else {
+        hamburger.classList.add('show');
     };
 });
 
