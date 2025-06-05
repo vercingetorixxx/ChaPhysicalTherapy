@@ -82,6 +82,7 @@
 body {
     background: var(--color1);
     width: var(--screenWidth);
+    position: relative;
 }
 
 nav {
@@ -123,8 +124,8 @@ span.bold{
     transition: background 0.5s ease;
 }
 
-.transBg{
-    background: rgba(255, 255, 255, 0.7);
+.bg{
+    background: var(--color1);
 }
 
 .logoContainer {
@@ -248,7 +249,7 @@ footer {
     width: var(--screenWidth);
     height: fit-content;
     background: var(--color1);
-    padding: var(--halfUnit) var(--halfUnit) calc(var(--unit) * 0.8) var(--halfUnit);
+    padding: var(--halfUnit) var(--halfUnit) calc(var(--unit) * 0.7) var(--halfUnit);
     overflow: hidden;
     position: relative;
 }
@@ -273,4 +274,36 @@ footer *{
 
 footer h3{
     margin: var(--halfUnit) 0 var(--eighthUnit) 0;
+}
+
+#musicPlayer{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--color7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#musicPlayer img{
+    width: 20px;
+    height: 20px;
+}
+
+.musicLine{
+    display: none;
+    position: absolute;
+    top: 14px;
+    width: 100%;
+    height: 2.5px;
+    background-color: var(--color1);
+    transform: rotate(45deg);
+}
+
+.musicLine.show{
+    display: inline-block;
 }
