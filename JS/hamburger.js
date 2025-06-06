@@ -35,8 +35,8 @@ const plusButtons = document.querySelectorAll('.plusButton');
 plusButtons.forEach(button => {
     button.addEventListener('click', () => {
         button.parentElement.nextElementSibling.classList.toggle('hidden');
-        button.parentElement.nextElementSibling.classList.toggle('moreMenu');
         button.querySelector('.rotate').classList.toggle('rotated');
+        button.classList.toggle('clicked');
     })
 });
 

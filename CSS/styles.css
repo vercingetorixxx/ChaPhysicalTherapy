@@ -1,19 +1,19 @@
 :root {
-    --color1: #FCFAF7;
-    --color2: #F2DDBD;
-    /* Light Peach */
-    --color3: #7A9CC6;
-    /* Soft Blue */
-    --color4: #75A996;
-    /* Soft Green */
-    --color5: #333333;
-    /* Dark Neutral Gray */
-    --color6: #05294F;
-    /* Logo, HamIcon */
-    --color7: #55BDC9;
-    /* Contact Bar */
-    --color8: #DF632B;
+    --color1: #FFFFF0;
+    /* Ivory - mainText, hamBg, footerBg, hamIcon, plusLine,  */
+    --color2: black;
+    /* black - footerText, hamburgerText */
+    --color3: #F2DDBD;
+    /* peach - hamItem borderBottom, hamburger borderTop */
+    --color4: #006400;
+    /* logoContainer, hamIcon */
+    --color5: #8B4513;
+    /* contactBar, musicPlayer */
+    --color6: #FF4500;
     /* CTA */
+    --color7: #228B22;
+    /* plusButton */
+
     --unit: 10vh;
     --halfUnit: calc(var(--unit) / 2);
     --quarterUnit: calc(var(--unit) / 4);
@@ -103,7 +103,7 @@ span.bold{
 
 .contactBar {
     width: var(--screenWidth);
-    background: var(--color7);
+    background: var(--color5);
     color: var(--color1);
     padding: 0 15px;
     display: flex;
@@ -131,7 +131,7 @@ span.bold{
 }
 
 .logoContainer {
-    background: var(--color6);
+    background: var(--color4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +150,7 @@ span.bold{
 }
 
 .book {
-    background: var(--color8);
+    background: var(--color6);
     width: fit-content;
     height: 40px;
     border-radius: 25px 3px;
@@ -183,7 +183,7 @@ main {
 }
 
 .textBox {
-    color: white;
+    color: var(--color1);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -217,7 +217,7 @@ main {
     margin-top: var(--quarterUnit);
     padding: 10px;
     background: rgba(255, 255, 255, 0.7);
-    color: black;
+    color: var(--color2);
     border-radius: 7px;
     font-weight: bold;
 }
@@ -268,7 +268,7 @@ main {
 }
 
 .footerContent * {
-    color: black;
+    color: var(--color2);
 }
 
 .footerInfo{
@@ -285,7 +285,7 @@ footer h3{
 }
 
 footer .textBox * {
-    color: white;
+    color: var(--color1);
 }
 footer .text{
     margin-top: var(--halfUnit);
@@ -302,7 +302,7 @@ footer .text{
     width: 40px;
     height: 40px;
     border-radius: 70% 0 0 0;
-    background: var(--color7);
+    background: var(--color5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,7 +327,7 @@ footer .text{
     right: -144px;
     width: 174px;
     height: 20px;
-    background-color: var(--color7);
+    background-color: var(--color5);
     color: var(--color1);
     font-size: 0.7rem;
     padding-left: 6px;
