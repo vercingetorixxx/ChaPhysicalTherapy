@@ -30,13 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Video failed to load. Refreshing page...');
             location.reload();
         });
+        
+        // Check if the video is ready after a timeout
+        setTimeout(() => {
+            if (video.readyState < 3) { // Less than 3 means not enough data to play
+                console.log('Video not ready. Refreshing page...');
+                location.reload();
+            }
+        }, 5000); // Wait 5 seconds to allow loading
     });
-
-    // // Check if the video is ready after a timeout
-    // setTimeout(() => {
-    //     if (video.readyState < 3) { // Less than 3 means not enough data to play
-    //         console.log('Video not ready. Refreshing page...');
-    //         location.reload();
-    //     }
-    // }, 5000); // Wait 5 seconds to allow loading
 });
