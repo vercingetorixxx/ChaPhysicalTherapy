@@ -1,0 +1,53 @@
+.textBox {
+    width: 80%;
+    border-radius: 60px 60px;
+}
+
+.textBox{
+    top: 55%;
+    left: calc(50% - 11px);
+}
+
+.textBox .title{
+    font-size: 2rem;
+}
+
+.treatments{
+    display: flex;
+    justify-content: space-around;
+}
+
+.subtitle{
+    display: inline-block;
+    margin-bottom: var(--eighthUnit);
+    cursor: default;
+    border-bottom: 1px solid transparent;
+}
+
+.time{
+    font-size: 1.2rem;
+    margin-bottom: var(--eighthUnit);
+}
+
+.rightBar{
+    position: fixed;
+    background: var(--color7);
+    right: 0;
+    width: 22px;
+    height: 100px;
+    z-index: 5;
+    border-radius: 0 20px 20px 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    padding-left: 1px;
+    font-size: 0.9rem;
+}
+.rightBar.one{
+    top: 25%;
+}
+.rightBar.two{
+    top: 50%;
+    height: 87px;
+}
