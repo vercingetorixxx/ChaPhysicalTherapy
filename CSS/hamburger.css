@@ -61,7 +61,7 @@ body.menu-open {
 
 .hamburger{
     position: fixed;
-    bottom: -10%;
+    bottom: 0;
     left: 0;
     width: var(--screenWidth);
     height: calc(var(--screenHeight) - 90px);
