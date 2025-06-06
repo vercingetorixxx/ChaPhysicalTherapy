@@ -40,27 +40,28 @@ body.menu-open {
     top: 27px;
 }
 
-#hamToggle:checked+.hamIcon .hamLine {
+.checked .hamLine {
     transition: transform 0.42s ease 0.42s, top 0.42s ease, opacity 0.42s ease;
-}
+}  /* It has to be '.checked .hamline' and not '.hamIcon .hamLine' */
 
-#hamToggle:checked+.hamIcon .hamLine:nth-child(1) {
+.checked .hamLine:nth-child(1) {
     transform: rotate(45deg);
     top: 16px;
 }
 
-#hamToggle:checked+.hamIcon .hamLine:nth-child(2) {
+.checked .hamLine:nth-child(2) {
     opacity: 0;
 }
 
-#hamToggle:checked+.hamIcon .hamLine:nth-child(3) {
+.checked .hamLine:nth-child(3) {
     transform: rotate(-45deg);
     top: 16px;
 }
 
+
 .hamburger{
     position: fixed;
-    bottom: 0;
+    bottom: -10%;
     left: 0;
     width: var(--screenWidth);
     height: calc(var(--screenHeight) - 90px);
@@ -69,7 +70,7 @@ body.menu-open {
     overflow-y: auto;
     z-index: 10;
 
-    transform: translateY(100%);
+    transform: translateY(110%);
     transition: transform 1.3s ease;
 
     border-radius: 25px 25px 0 0;

@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const hamToggle = document.getElementById('hamToggle');
 const navigation = document.querySelector('.navigation');
 const hamburger = document.querySelector('.hamburger');
+const hamIcon = document.querySelector('.hamIcon');
 
 hamToggle.addEventListener('click', () => {
     navigation.classList.toggle('hamBg');
@@ -18,8 +19,10 @@ hamToggle.addEventListener('click', () => {
 
     if (hamburger.classList.contains('show')) {
         hamburger.classList.remove('show');
+        hamIcon.classList.remove('checked');
     } else {
         hamburger.classList.add('show');
+        hamIcon.classList.add('checked');
     };
 });
 

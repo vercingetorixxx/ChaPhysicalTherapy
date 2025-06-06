@@ -245,6 +245,18 @@ main {
     margin-bottom: 0.25rem;
 }
 
+.backupImg {
+    position: absolute;
+    width: var(--screenWidth);
+    height: calc(100vh - var(--contactBarHeight));
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+
 
 
 .footerContent {
