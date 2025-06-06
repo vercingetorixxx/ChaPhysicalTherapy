@@ -1,10 +1,10 @@
 .textBox {
-    width: 80%;
+    width: 300px;
     border-radius: 60px 60px;
 }
 
 .textBox{
-    top: 55%;
+    top: calc(50% + 30px);;
     left: calc(50% - 11px);
 }
 
