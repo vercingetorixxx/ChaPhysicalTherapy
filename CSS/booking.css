@@ -1,6 +1,7 @@
 .textBox {
     width: 300px;
     border-radius: 60px 60px;
+    padding: 20px 40px !important;
 }
 
 .textBox{
