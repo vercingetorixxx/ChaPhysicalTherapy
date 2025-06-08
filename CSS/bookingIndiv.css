@@ -1,0 +1,15 @@
+.textBox {
+    left: 50%;
+}
+
+.textBox .title {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.time {
+    width: 100%;
+    text-align: right;
+    font-size: 1.1rem;
+    border-bottom: none;
+}

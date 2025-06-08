@@ -1,18 +1,13 @@
 :root {
     --color1: #FFFFF0;
     /* Ivory - mainText, hamBg, footerBg, hamIcon, plusLine,  */
-    --color2: black;
-    /* black - footerText, hamburgerText */
-    --color3: #F2DDBD;
-    /* peach - hamItem borderBottom, hamburger borderTop */
-    --color4: #006400;
-    /* logoContainer, hamIcon */
-    --color5: #8B4513;
-    /* contactBar, musicPlayer */
-    --color6: #FF4500;
+    --color2: #443627;
+    /* black - footerText, hamburgerText, contactBar */
+    --color3: #EFDCAB;
+    /* peach - hamItem borderBottom, hamburger borderTop, logoContainer, 
+    hamIcon, musicPlayer, plusButton */
+    --color4: #D98324;
     /* CTA */
-    --color7: #228B22;
-    /* plusButton */
 
     --unit: 10vh;
     --halfUnit: calc(var(--unit) / 2);
@@ -98,7 +93,7 @@ nav {
     position: fixed;
     top: 0;
     height: 90px;
-    z-index: 5;
+    z-index: 9;
 }
 
 p {
@@ -111,7 +106,7 @@ span.bold{
 
 .contactBar {
     width: var(--screenWidth);
-    background: var(--color5);
+    background: var(--color2);
     color: var(--color1);
     padding: 0 15px;
     display: flex;
@@ -139,7 +134,7 @@ span.bold{
 }
 
 .logoContainer {
-    background: var(--color4);
+    background: var(--color3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,7 +154,7 @@ span.bold{
 }
 
 .book {
-    background: var(--color6);
+    background: var(--color4);
     width: fit-content;
     height: 40px;
     border-radius: 25px 3px;
@@ -237,6 +232,7 @@ main {
     color: var(--color2);
     border-radius: 7px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .vidContainer {
@@ -314,12 +310,12 @@ footer .text{
 
 #musicPlayer{
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: -1px;
+    bottom: -1px;
     width: 40px;
     height: 40px;
     border-radius: 70% 0 0 0;
-    background: var(--color5);
+    background: var(--color3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -341,12 +337,12 @@ footer .text{
     align-items: center;
     justify-content: start;
     position: fixed;
-    bottom: 0px;
+    bottom: -1px;
     right: -144px;
     width: 174px;
     height: 20px;
-    background-color: var(--color5);
-    color: var(--color1);
+    background-color: var(--color3);
+    color: var(--color2);
     font-size: 0.7rem;
     padding-left: 6px;
     border-radius: 10px 0 0 0;

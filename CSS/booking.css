@@ -2,11 +2,12 @@
     width: 300px;
     border-radius: 60px 60px;
     padding: 20px 40px !important;
+    top: calc(50% + 30px);
+    left: calc(50% - 11px);
 }
 
-.textBox{
-    top: calc(50% + 30px);;
-    left: calc(50% - 11px);
+.textBox.specialized{
+    top: calc(50% + 25px);
 }
 
 .textBox .title{
@@ -18,22 +19,19 @@
     justify-content: space-around;
 }
 
-.subtitle{
-    display: inline-block;
-    margin-bottom: var(--eighthUnit);
-    cursor: default;
-    border-bottom: 1px solid transparent;
-}
-
 .time{
+    display: inline-block;
+    padding-bottom: var(--eighthUnit);
+    border-bottom: 1px solid var(--color1);
     font-size: 1.2rem;
     margin-bottom: var(--eighthUnit);
 }
 
+
 .rightBar{
     position: fixed;
-    background: var(--color7);
-    right: 0;
+    background: var(--color3);
+    right: -1px;
     width: 22px;
     height: 100px;
     z-index: 5;
@@ -44,6 +42,9 @@
     justify-content: center;
     padding-left: 1px;
     font-size: 0.9rem;
+}
+.rightBar a{
+    color: var(--color2);
 }
 .rightBar.one{
     top: 25%;
