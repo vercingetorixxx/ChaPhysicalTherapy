@@ -222,18 +222,19 @@ main {
     color: var(--color1);
 }
 
-.yoYo.two{
+.yoYo{
     width: 100%;
     background: linear-gradient(45deg, var(--color4), var(--color3)) !important;
     padding: 40px 100px 40px 40px;
+    position: relative;
 }
 
-.yoYo.two *{
+.yoYo *{
     color: var(--color1);
     text-align: left;
 }
 
-.yoYo.two .title{
+.yoYo .title{
     font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: bold;
@@ -263,7 +264,7 @@ main {
     position: absolute;
     width: 300px;
     background: var(--color1);
-    top: 10%;
+    top: 40px;
     left: 63%;
     transform: translate(-50%, 0);
     border-radius: 20px;
@@ -334,6 +335,14 @@ main {
 }
 .infoBox.scrolled::before{
     transform: scaleY(1);
+}
+
+.infoBox.two{
+    top: 120px;
+}
+
+.infoBox.three{
+    top: 160px;
 }
 
 
