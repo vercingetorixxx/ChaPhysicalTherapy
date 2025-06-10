@@ -299,7 +299,7 @@ main {
     background: linear-gradient(45deg, var(--color4), var(--color3));
     transform: scaleY(0);
     transform-origin: top;
-    transition: transform 1.2s ease;
+    transition: transform 1s ease;
 }
 .infoBox.scrolled::before{
     transform: scaleY(1);

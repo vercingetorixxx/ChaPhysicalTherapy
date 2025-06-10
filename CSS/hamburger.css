@@ -59,7 +59,7 @@
 }
 
 .book {
-    background: linear-gradient(360deg, var(--color4), var(--color3));
+    background: linear-gradient(45deg, var(--color4), var(--color3));
     width: fit-content;
     height: 40px;
     border-radius: 40px;
