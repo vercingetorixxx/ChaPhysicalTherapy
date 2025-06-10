@@ -231,18 +231,18 @@ main {
     position: absolute;
     width: 300px;
     background: var(--color1);
-    top: 40px;
-    left: 63%;
-    transform: translate(-50%, 0);
+    top: 50px;
+    left: 75px;
     border-radius: 20px;
     z-index: 1;
     padding: 20px;
     line-height: 1.4rem;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
     overflow: hidden;
 }
 .infoBox.scrolled{
     left: 50%;
+    transform: translate(-50%, 0);
     box-shadow: 8px 10px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -299,18 +299,18 @@ main {
     background: linear-gradient(45deg, var(--color4), var(--color3));
     transform: scaleY(0);
     transform-origin: top;
-    transition: transform 0.5s ease;
+    transition: transform 1.2s ease;
 }
 .infoBox.scrolled::before{
     transform: scaleY(1);
 }
 
 .infoBox.two{
-    top: 590px;
+    top: 608px;
 }
 
 .infoBox.three{
-    top: 1100px;
+    top: 1122px;
 }
 
 
@@ -318,13 +318,13 @@ main {
 .vidContainer {
     position: relative;
     width: var(--screenWidth);
-    height: calc(100vh - var(--contactBarHeight));
+    height: calc(var(--screenHeight) - var(--contactBarHeight));
     overflow-y: visible;
 }
 
 .vidContainer .media, .frontDesk .media {
     width: var(--screenWidth);
-    height: calc(100vh - var(--contactBarHeight));
+    height: calc(var(--screenHeight) - var(--contactBarHeight));
     object-fit: cover;
     display: block;
     filter: brightness(0.7);
