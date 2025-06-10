@@ -1,7 +1,7 @@
 :root {
     --color1: #FFFFF0;
     /* Ivory - mainText, hamBg, footerBg, hamIcon, plusLine,  */
-    --color2: #443627;
+    --color2: #290c0b;
     /* black - footerText, hamburgerText, contactBar */
     --color3: #EFDCAB;
     /* peach - hamItem borderBottom, hamburger borderTop, logoContainer, 
@@ -105,105 +105,10 @@ span.bold{
     font-weight: bold;
 }
 
-.contactBar {
-    width: var(--screenWidth);
-    background: var(--color2);
-    padding: 0 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.8rem;
-    font-weight: bold;
-    height: var(--contactBarHeight);
-}
-
-.contactBar *{
-    color: var(--color1);
-}
-
-.navigation {
-    width: var(--screenWidth);
-    padding: 0 15px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: var(--navHeight);
-    transition: background 0.5s ease;
-    border-radius: 0 0 25px 25px;
-}
-
-.bg{
-    background: var(--color1);
-}
-
-.logoContainer {
-    background: linear-gradient(360deg, var(--color4), var(--color3));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 125px;
-    height: 40px;
-    border-radius: 3px 25px;
-    cursor: pointer;
-}
-
-.navigation img {
-    width: 100px;
-}
-
-.navContainer {
-    display: flex;
-    align-items: center;
-}
-
-.book {
-    background: linear-gradient(360deg, var(--color4), var(--color3));
-    width: fit-content;
-    height: 40px;
-    border-radius: 25px 3px;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    margin-right: 20px;
-    cursor: pointer;
-    transition: border-radius 0.5s ease;
-    color: var(--color1);
-}
-.book:hover{
-    border-radius: 3px 25px;
-}
-
 main {
     margin-top: var(--contactBarHeight);
     width: var(--screenWidth);
     overflow-x: hidden;
-}
-
-.frontDesk {
-    height: calc(var(--screenHeight) - var(--contactBarHeight));
-    width: var(--screenWidth);
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.frontDesk .media {
-    height: calc(var(--screenHeight) - var(--contactBarHeight));
-    width: var(--screenWidth);
-    min-width: 600px;
-    filter: brightness(0.7);
-}
-
-.title {
-    font-size: 3rem;
-    margin-bottom: var(--eighthUnit);
-}
-
-.frontText *{
-    color: var(--color1);
 }
 
 .textBox, .frontText, .closeText {
@@ -213,6 +118,68 @@ main {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+.frontText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: calc(50% + calc(var(--navHeight) / 2.5));
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: var(--eighthUnit);
+}
+
+.frontText *{
+    color: var(--color1);
+    margin-bottom: var(--quarterUnit);
+}
+
+.frontText .title{
+    width: 200px;
+}
+.frontText .text{
+    width: 250px;
+}
+
+.frontButton1{
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--color4), var(--color3));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition: all 0.5s ease;
+}
+.frontButton1:hover{
+    transform: scale(1.02) translateY(-5%);
+    box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.3);
+}
+.frontButton2{
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    background: rgba(0,0,0,0.2);
+    border: 5px solid var(--color3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 3px;
+    transition: all 0.5s ease;
+}
+.frontButton2:hover{
+    transform: scale(1.02) translateY(-5%);
+}
+
+#treatment1:target {
+    scroll-margin-top: 70px;
+}
+
 .textBox:not(.front):not(.footer) {
     background: var(--containerBg);
     padding: 15px;
@@ -271,13 +238,14 @@ main {
     z-index: 1;
     padding: 20px;
     line-height: 1.4rem;
-    transition: left 0.5s ease;
+    transition: all 0.5s ease;
     overflow: hidden;
 }
-
 .infoBox.scrolled{
     left: 50%;
+    box-shadow: 8px 10px 4px 5px rgba(0, 0, 0, 0.3);
 }
+
 .infoBoxTitle{
     font-size: 1.25rem;
     text-decoration: underline;
@@ -338,11 +306,11 @@ main {
 }
 
 .infoBox.two{
-    top: 120px;
+    top: 590px;
 }
 
 .infoBox.three{
-    top: 160px;
+    top: 1100px;
 }
 
 
