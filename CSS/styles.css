@@ -362,6 +362,7 @@ main {
 }
 
 .river{
+    min-height: 1650px;
     height: calc(var(--screenHeight) * 2.2) !important;
     filter: brightness(1) !important;
 }
