@@ -358,7 +358,7 @@ main {
 }
 
 .footVid {
-    height: calc(var(--screenHeight) - 90px) !important;
+    height: calc(100vh - 90px) !important;
 }
 
 .river{
