@@ -1,0 +1,28 @@
+.footerContent {
+    width: var(--screenWidth);
+    height: fit-content;
+    padding: var(--halfUnit) 0 0 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.footerInfo{
+    line-height: 1.4rem;
+    padding: 0 var(--halfUnit) var(--halfUnit) var(--halfUnit);
+}
+
+.footerInfo.location{
+    text-align: end;
+}
+
+footer h3{
+    margin: 0 0 0 0;
+}
+
+footer .textBox * {
+    color: var(--color1);
+}
+footer .text{
+    margin-top: var(--halfUnit);
+    font-size: 1.3rem !important;
+}

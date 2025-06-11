@@ -131,6 +131,16 @@ main {
     margin-bottom: var(--eighthUnit);
 }
 
+.frontText.foot{
+    top: 50%;
+}
+
+.frontText.foot .title{
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+}
+
 .frontText *{
     color: var(--color1);
     margin-bottom: var(--quarterUnit);
@@ -176,6 +186,11 @@ main {
     transform: scale(1.02) translateY(-5%);
 }
 
+.frontButton1.foot{
+    width: 250px;
+    padding-bottom: 0px;
+}
+
 #treatment1:target {
     scroll-margin-top: 70px;
 }
@@ -205,6 +220,17 @@ main {
     font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: bold;
+}
+
+.yoYo.two{
+    padding-right: 40px;
+}
+.yoYo.two .title{
+    margin-bottom: 0rem;
+}
+
+.yoYo.three .text:not(:last-child){
+    margin-bottom: 3rem;
 }
 
 .textBox.three {
@@ -331,6 +357,15 @@ main {
     z-index: 0;
 }
 
+.footVid {
+    height: calc(var(--screenHeight) - 90px) !important;
+}
+
+.river{
+    height: calc(var(--screenHeight) * 2.2) !important;
+    filter: brightness(1) !important;
+}
+
 .textBox.three .title {
     font-size: 2.5rem;
 }
@@ -349,37 +384,6 @@ main {
     display: block;
     filter: brightness(0.7);
     z-index: -1;
-}
-
-
-
-.footerContent {
-    width: var(--screenWidth);
-    height: fit-content;
-    padding: var(--halfUnit) 0 0 0;
-    overflow: hidden;
-    position: relative;
-}
-
-.footerInfo{
-    line-height: 1.4rem;
-    padding: 0 var(--halfUnit) var(--halfUnit) var(--halfUnit);
-}
-
-.footerInfo.location{
-    text-align: end;
-}
-
-footer h3{
-    margin: 0 0 0 0;
-}
-
-footer .textBox * {
-    color: var(--color1);
-}
-footer .text{
-    margin-top: var(--halfUnit);
-    font-size: 1.3rem !important;
 }
 
 
@@ -407,27 +411,9 @@ footer .text{
     width: 25px;
     height: 25px;
     z-index: 2;
+    filter: brightness(0.5);
+    transition: filter 2s ease;
 }
-
-.musicLine{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    bottom: -20px;
-    right: 40px;
-    width: 140px;
-    height: 20px;
-    background: rgba(0,0,0,0.5);
-    color: var(--color1);
-    font-size: 0.7rem;
-    border-radius: 10px 10px 0 0;
-    transition: bottom 2s ease;
-    padding-top: 1px;
-    cursor: default;
-    z-index: 1;
-}
-
-.musicLine.show{
-    bottom: 0px;
+#musicPlayer.show img{
+    filter: brightness(1);
 }
