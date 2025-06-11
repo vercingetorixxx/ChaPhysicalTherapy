@@ -258,7 +258,7 @@ main {
     width: 300px;
     background: var(--color1);
     top: 50px;
-    left: 75px;
+    right: -17px;
     border-radius: 20px;
     z-index: 1;
     padding: 20px;
@@ -267,8 +267,8 @@ main {
     overflow: hidden;
 }
 .infoBox.scrolled{
-    left: 50%;
-    transform: translate(-50%, 0);
+    right: 50%;
+    transform: translate(50%, 0);
     box-shadow: 8px 10px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
