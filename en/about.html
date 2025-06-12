@@ -2,252 +2,350 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | ChaPT</title>
-    <link href="../CSS/normalize.css" rel="stylesheet">
-    <link href="../CSS/styles.css" rel="stylesheet" />
-    <link href="../CSS/hamburger.css" rel="stylesheet">
-    <link href="../CSS/footer.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="../media/images/favicon.ico" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | ChaPT</title>
+  <link href="../CSS/normalize.css" rel="stylesheet">
+  <link href="../CSS/styles.css" rel="stylesheet" />
+  <link href="../CSS/hamburger.css" rel="stylesheet">
+  <link href="../CSS/footer.css" rel="stylesheet" />
+  <link href="../CSS/about.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="../media/images/favicon.ico" />
 </head>
 
 <body>
 
-    <nav>
-        <div class="contactBar">
-            <a class="phoneNumber">646-580-2934</a>
-            <a><img src="../media/images/Insta.svg" /></a>
-            <a><img src="../media/images/Facebook.webp" /></a>
-            <a><img src="../media/images/linkedIn.webp" /></a>
-            <a class="contact">Contact</a>
+  <nav>
+    <div class="contactBar">
+      <a class="phoneNumber">646-580-2934</a>
+      <a><img src="../media/images/Insta.svg" /></a>
+      <a><img src="../media/images/Facebook.webp" /></a>
+      <a><img src="../media/images/linkedIn.webp" /></a>
+      <a class="contact">Contact</a>
+    </div>
+    <div class="navigation">
+      <a class="logoContainer" href="about.html">
+        <img src="../media/images/chaLogoFCFAF7.webp" />
+      </a>
+      <div class="navContainer">
+        <a class="book" href="booking.html">Book Now</a>
+        <input id="hamToggle" type="checkbox" autocomplete="off">
+        <label class="hamIcon" for="hamToggle">
+          <div class="hamLine"></div>
+          <div class="hamLine"></div>
+          <div class="hamLine"></div>
+        </label>
+      </div>
+    </div>
+    <div class="hamburger">
+      <div class="hamItem">
+        <div class="hamText">Locations</div>
+        <div class="plusButton">
+          <div class="plusLine"></div>
+          <div class="plusLine rotate rotated"></div>
         </div>
-        <div class="navigation">
-            <a class="logoContainer" href="about.html">
-                <img src="../media/images/chaLogoFCFAF7.webp" />
-            </a>
-            <div class="navContainer">
-                <a class="book" href="booking.html">Book Now</a>
-                <input id="hamToggle" type="checkbox" autocomplete="off">
-                <label class="hamIcon" for="hamToggle">
-                    <div class="hamLine"></div>
-                    <div class="hamLine"></div>
-                    <div class="hamLine"></div>
-                </label>
-            </div>
+      </div>
+      <div class="moreMenu hidden">
+        <a>Location 1</a>
+        <a>Location 2</a>
+        <a>Location 3</a>
+      </div>
+      <div class="hamItem">
+        <div class="hamText">Take a tour</div>
+      </div>
+      <div class="hamItem">
+        <div class="hamText">Treatments</div>
+        <div class="plusButton">
+          <div class="plusLine"></div>
+          <div class="plusLine rotate rotated"></div>
         </div>
-        <div class="hamburger">
-            <div class="hamItem">
-                <div class="hamText">Locations</div>
-                <div class="plusButton">
-                    <div class="plusLine"></div>
-                    <div class="plusLine rotate rotated"></div>
-                </div>
-            </div>
-            <div class="moreMenu hidden">
-                <a>Location 1</a>
-                <a>Location 2</a>
-                <a>Location 3</a>
-            </div>
-            <div class="hamItem">
-                <div class="hamText">Take a tour</div>
-            </div>
-            <div class="hamItem">
-                <div class="hamText">Treatments</div>
-                <div class="plusButton">
-                    <div class="plusLine"></div>
-                    <div class="plusLine rotate rotated"></div>
-                </div>
-            </div>
-            <div class="moreMenu hidden">
-                <a>Movement & Neuromuscular Disorders</a>
-                <a>Pain, Recovery, & Rehabilitation</a>
-                <a>Specialized Wellness Programs</a>
-            </div>
-            <div class="hamItem">
-                <div class="hamText">Services</div>
-                <div class="plusButton">
-                    <div class="plusLine"></div>
-                    <div class="plusLine rotate rotated"></div>
-                </div>
-            </div>
-            <div class="moreMenu hidden">
-                <a>Service 1</a>
-                <a>Service 2</a>
-                <a>Service 3</a>
-            </div>
-            <div class="hamItem">
-                <div class="hamText">About</div>
-            </div>
-            <div class="hamItem">
-                <div class="hamText">Careers</div>
-            </div>
+      </div>
+      <div class="moreMenu hidden">
+        <a>Movement & Neuromuscular Disorders</a>
+        <a>Pain, Recovery, & Rehabilitation</a>
+        <a>Specialized Wellness Programs</a>
+      </div>
+      <div class="hamItem">
+        <div class="hamText">Services</div>
+        <div class="plusButton">
+          <div class="plusLine"></div>
+          <div class="plusLine rotate rotated"></div>
         </div>
-    </nav>
+      </div>
+      <div class="moreMenu hidden">
+        <a>Service 1</a>
+        <a>Service 2</a>
+        <a>Service 3</a>
+      </div>
+      <div class="hamItem">
+        <div class="hamText">About</div>
+      </div>
+      <div class="hamItem">
+        <div class="hamText">Careers</div>
+      </div>
+    </div>
+  </nav>
 
-    <main>
+  <main>
 
-        <div class="vidContainer">
-            <video class="media" autoplay loop muted>
-                <source src="../media/videos/sampleVideo1.mp4" type="video/mp4">
-            </video>
-            <div class="frontText">
-                <div class="title">Life Starts Here.</div>
-                <div class="text">Transform your recovery with our innovative CHA Method™ - where 
-                    evidence-based techniques meet personalized care for optimal healing 
-                    and performance.</div>
-                <a class="frontButton1" href="booking.html">Start Your Journey</a>
-                <a class="frontButton2" href="#treatment1">Explore Treatments</a>
-            </div>
-            <img class="backupImg" src="../media/videos/backup1.webp" alt="snow owl"/>
+    <div class="vidContainer">
+      <video class="media" autoplay loop muted>
+        <source src="../media/videos/sampleVideo1.mp4" type="video/mp4">
+      </video>
+      <div class="vidText start">
+        <div class="title">Life Starts Here.</div>
+        <div class="text">Transform your recovery with our innovative CHA Method™ - where
+          evidence-based techniques meet personalized care for optimal healing
+          and performance.</div>
+        <a class="vidButton1" href="booking.html">Start Your Journey</a>
+        <a class="vidButton2" href="#treatment1">Explore Treatments</a>
+      </div>
+      <img class="backupImg" src="../media/videos/backup1.webp" alt="snow owl" />
+    </div>
+
+    <div class="yoYo">
+      <div class="title">Full Body Restoration</div>
+      <div class="text">
+        <p>Experience our signature CHA Method™ — a refined fusion of
+          evidence-based techniques and integrative healing designed to restore
+          your body's natural harmony.</p>
+      </div>
+    </div>
+
+    <div class="vidContainer river" id="treatment1">
+      <video class="media river" autoplay loop muted>
+        <source src="../media/videos/riverVideo.mp4" type="video/mp4">
+      </video>
+      <div class="infoBox">
+        <div class="infoBoxContent">
+          <div class="serviceIconContainer">
+            <div class="serviceIcon">🏃🏻‍♀️</div>
+          </div>
+          <div class="infoBoxTitle">Movement & Performance</div>
+          <div>Specialized programs for athletes and active individuals focusing on movement
+            optimization, injury prevention, and peak performance enhancement.</div>
+          <ul class="serviceFeatures">
+            <li>Movement Disorders of the Musculoskeletal System</li>
+            <li>TMJ Disorder (Temporomandibular Joint Dysfunction)</li>
+            <li>Postural Restoration & Body Mechanics</li>
+            <li>Performance Enhancement Programs</li>
+          </ul>
         </div>
-
-        <div class="yoYo">
-            <div class="title">Full Body Restoration</div>
-            <div class="text"><p>Experience our signature CHA Method™ — a refined fusion of 
-                    evidence-based techniques and integrative healing designed to restore
-                    your body's natural harmony.</p></div>
+      </div>
+      <div class="infoBox two">
+        <div class="infoBoxContent">
+          <div class="serviceIconContainer">
+            <div class="serviceIcon">💪🏻</div>
+          </div>
+          <div class="infoBoxTitle">Pain & Recovery</div>
+          <div>Comprehensive rehabilitation services using cutting-edge techniques to
+            manage pain, accelerate healing, and restore full function.</div>
+          <ul class="serviceFeatures">
+            <li>Pain Management & Chronic Pain Relief</li>
+            <li>Orthopedic Manual Therapy (Specialty Focus)</li>
+            <li>Schroth 3-Dimensional Scoliosis Therapy</li>
+            <li>Post-Surgical Rehabilitation</li>
+          </ul>
         </div>
+      </div>
+      <div class="infoBox three">
+        <div class="infoBoxContent">
+          <div class="serviceIconContainer">
+            <div class="serviceIcon">🧘🏾‍♂️</div>
+          </div>
+          <div class="infoBoxTitle">Wellness & Prevention</div>
+          <div>Holistic programs designed for long-term health, vitality, and injury
+            prevention through personalized wellness strategies.</div>
+          <ul class="serviceFeatures">
+            <li>Wellness & Prevention Programs</li>
+            <li>Artist Clinic (Musicians, Dancers & Creatives)</li>
+            <li>Movement Disorders of the Nervous System</li>
+            <li>Lifestyle & Ergonomic Optimization</li>
+          </ul>
+        </div>
+      </div>
+      <div class="infoBox four">
+        <div class="serviceIconContainer">
+          <div class="serviceIcon">📃</div>
+        </div>
+        <div class="infoBoxTitle">Insurance</div>
+        <div>CHA PT accepts:</div>
+        <ul class="serviceFeatures">
+          <li>All Out-of-Network Benefit Insurance Plans</li>
+          <li>Most In-Network Insurance Plans</li>
+          <li>Medicare, Worker’s Compensation & No-Fault Insurance</li>
+        </ul>
+      </div>
+      <img class="backupImg river" src="../media/videos/riverBackup.webp" alt="rushing river" />
+    </div>
 
-        <div class="vidContainer river" id="treatment1">
-            <video class="media river" autoplay loop muted>
-                <source src="../media/videos/riverVideo.mp4" type="video/mp4">
-            </video>
-            <div class="infoBox">
-                <div class="infoBoxContent">
-                    <div class="serviceIconContainer">
-                        <div class="serviceIcon">🏃🏻‍♀️</div>
-                    </div>
-                    <div class="infoBoxTitle">Movement & Performance</div>
-                    <div>Specialized programs for athletes and active individuals focusing on movement 
-                        optimization, injury prevention, and peak performance enhancement.</div>
-                    <ul class="serviceFeatures">
-                        <li>Movement Disorders of the Musculoskeletal System</li>
-                        <li>TMJ Disorder (Temporomandibular Joint Dysfunction)</li>
-                        <li>Postural Restoration & Body Mechanics</li>
-                        <li>Performance Enhancement Programs</li>
+    <div class="yoYo two">
+      <div class="title">Our Therapists</div>
+    </div>
+
+    <div class="vidContainer meet">
+      <video class="media meet" autoplay loop muted disablePictureInPicture>
+        <source src="../media/videos/sampleVideo3.mp4" type="video/mp4">
+      </video>
+      <div class="vidText foot people">
+        <div class="section">
+          <div class="siContainer">
+            <div class="flipper">
+              <div class="sectionItem front">
+                <div class="contentWrapper">
+                  <img src="../media/images/person1.webp" />
+                  <div class="siText">
+                    <div class="position">Deukyoung Cha<br>PT, DPT</div>
+                    <ul class="resume">
+                      <li>Founder & Clinical Director, CHA Physical Therapy</li>
+                      <li>Member, American Physical Therapy Association (since 2003)</li>
+                      <li>APTA Credentialed Clinical Instructor</li>
                     </ul>
+                  </div>
                 </div>
-            </div>
-            <div class="infoBox two">
-                <div class="infoBoxContent">
-                    <div class="serviceIconContainer">
-                        <div class="serviceIcon">💪🏻</div>
-                    </div>
-                    <div class="infoBoxTitle">Pain & Recovery</div>
-                    <div>Comprehensive rehabilitation services using cutting-edge techniques to 
-                        manage pain, accelerate healing, and restore full function.</div>
-                    <ul class="serviceFeatures">
-                        <li>Pain Management & Chronic Pain Relief</li>
-                        <li>Orthopedic Manual Therapy (Specialty Focus)</li>
-                        <li>Schroth 3-Dimensional Scoliosis Therapy</li>
-                        <li>Post-Surgical Rehabilitation</li>
-                    </ul>
+                <div class="arrowButton">❮</div>
+              </div>
+              <div class="sectionItem back">
+                <div class="contentWrapper">
+                  <p>Dr. Deukyoung Cha, PT, DPT, is the Founder and Clinical Director of CHA
+                    Physical Therapy, with over 25 years of experience in orthopedic manual
+                    therapy and holistic rehabilitation.</p>
+                  <p>A graduate of Yonsei University and Stony Brook University, and a licensed
+                    physical therapist since 1998, Dr.Cha has worked across acute care
+                    hospitals, school systems, and privateclinics, developing a deep and
+                    integrative approach to care.</p>
+                  <p>His signature Cha Method blends evidence-based techniques with movement
+                    science, breathwork, and postural re-education to restore balance and
+                    optimize function. </p>
+                  <p>A dedicated APTA Clinical Instructor, martial artist, and avid outdoor
+                    enthusiast, Dr. Cha brings the same focus and compassion to his work
+                    as he does to his life as a teacher, healer, and family man.</p>
                 </div>
+                <div class="arrowButton">❯</div>
+              </div>
             </div>
-            <div class="infoBox three">
-                <div class="infoBoxContent">
-                    <div class="serviceIconContainer">
-                        <div class="serviceIcon">🧘🏾‍♂️</div>
-                    </div>
-                    <div class="infoBoxTitle">Wellness & Prevention</div>
-                    <div>Holistic programs designed for long-term health, vitality, and injury 
-                        prevention through personalized wellness strategies.</div>
-                    <ul class="serviceFeatures">
-                        <li>Wellness & Prevention Programs</li>
-                        <li>Artist Clinic (Musicians, Dancers & Creatives)</li>
-                        <li>Movement Disorders of the Nervous System</li>
-                        <li>Lifestyle & Ergonomic Optimization</li>
+          </div>
+          <div class="siContainer">
+            <div class="flipper">
+              <div class="sectionItem front">
+                <div class="contentWrapper">
+                  <img src="../media/images/person2.webp" />
+                  <div class="siText">
+                    <div class="position">Dr. Mansoo Kim<br>DPT, L.Ac.</div>
+                    <ul class="resume">
+                      <li>Clinical Director, CHA Physical Therapy P.C. II – Chinatown</li>
+                      <li>Licensed Acupuncturist, New York State</li>
+                      <li>Doctor of Physical Therapy, Dominican College</li>
                     </ul>
+                  </div>
                 </div>
+                <div class="arrowButton">❮</div>
+              </div>
+              <div class="sectionItem back">
+                <div class="contentWrapper">
+                  <p>Dr. Mansoo Kim, DPT, L.Ac., is the Clinical Director of CHA Physical
+                    Therapy P.C. II in Chinatown, New York City, where he has led care
+                    since 2019.</p>
+                  <p>A graduate of Yong-In University in South Korea and Dominican College
+                    in New York, Dr. Kim brings over 15 years of clinical experience in
+                    physical therapy and a unique dual-licensure in acupuncture.</p>
+                  <p>With a deep-rooted belief in both Eastern and Western healing
+                    practices, he integrates advanced manual therapy, orthopedic
+                    rehabilitation, and traditional methods such as cupping, tuina, and
+                    trigger point acupuncture to offer truly holistic care.</p>
+                  <p>Dr. Kim specializes in neuromuscular and orthopedic conditions—
+                    including stroke recovery, surgical rehab, and sports injuries—
+                    delivering thoughtful, individualized treatments that draw from
+                    both evidence-based physical therapy and traditional Eastern
+                    medicine.</p>
+                </div>
+                <div class="arrowButton">❯</div>
+              </div>
             </div>
-            <div class="infoBox four">
-                    <div class="serviceIconContainer">
-                        <div class="serviceIcon">📃</div>
-                    </div>
-                    <div class="infoBoxTitle">Insurance</div>
-                    <div>CHA PT accepts:</div>
-                    <ul class="serviceFeatures">
-                        <li>All Out-of-Network Benefit Insurance Plans</li>
-                        <li>Most In-Network Insurance Plans</li>
-                        <li>Medicare, Worker’s Compensation & No-Fault Insurance</li>
-                    </ul>
-            </div>
-            <img class="backupImg river" src="../media/videos/riverBackup.webp" alt="rushing river"/>
+          </div>
         </div>
+      </div>
+    </div>
+    <img class="backupImg" src="../media/videos/backup3.webp" alt="a field of flowers" />
+    </div>
 
-        <div class="yoYo two">
-            <div class="title">Meet the Team</div>
+    <div class="yoYo three">
+      <div class="yoYoItem">
+        <div class="title">1000+</div>
+        <div class="text">
+          <p>Patients Transformed</p>
         </div>
-
-        <div class="yoYo three">
-            <div class="yoYoItem">
-                <div class="title">1000+</div>
-                <div class="text"><p>Patients Transformed</p></div>
-            </div>
-            <div class="yoYoItem">
-                <div class="title">15+</div>
-                <div class="text"><p>Years Experience</p></div>
-            </div>
-            <div class="yoYoItem">
-                <div class="title">98%</div>
-                <div class="text"><p>Success Rate</p></div>
-            </div>
-            <div class="yoYoItem">
-                <div class="title">24/7</div>
-                <div class="text"><p>Support Available</p></div>
-            </div> 
+      </div>
+      <div class="yoYoItem">
+        <div class="title">15+</div>
+        <div class="text">
+          <p>Years Experience</p>
         </div>
-
-        <div class="vidContainer footVid">
-            <video class="media footVid" autoplay loop muted disablePictureInPicture>
-                <source src="../media/videos/sampleVideo2.mp4" type="video/mp4">
-            </video>
-            <div class="frontText foot">
-                <div class="title">Ready to Begin Your Recovery?</div>
-                <div class="text">Take the first step towards renewed strength, mobility, 
-                    and confidence. Our team is ready to create a personalized treatment 
-                    plan just for you.</div>
-                <a class="frontButton1 foot" href="booking.html">Schedule Your Consultation</a>
-            </div>
-            </div>
-            <img class="backupImg footVid" src="../media/videos/backup2.webp" alt="man on tree"/>
+      </div>
+      <div class="yoYoItem">
+        <div class="title">98%</div>
+        <div class="text">
+          <p>Success Rate</p>
         </div>
-
-    </main>
-
-    <footer>
-        <div class="footerContent">
-            <div class="footerInfo">
-                <h3>Contact</h3>
-                <div>E: chaphysicaltherapy@gmail.com</div>
-                <div>P: (646) 580-2934</div>
-                <div>F: 212-643-9330</div>
-                <div>Clinic Hours: 9AM - 7PM</div>
-            </div>
-            <div class="footerInfo location">
-                <h3>Location</h3>
-                <div>16 W 32nd Street, Suite 1007, NYC 10001</div>
-            </div>
+      </div>
+      <div class="yoYoItem">
+        <div class="title">24/7</div>
+        <div class="text">
+          <p>Support Available</p>
         </div>
-        <div class="vidContainer footVid">
-            <video class="media footVid" autoplay loop muted disablePictureInPicture>
-                <source src="../media/videos/sampleVideo5.mp4" type="video/mp4">
-            </video>
-            <div class="closeText">
-                <div class="title">CHA Physical Therapy</div>
-                <div class="text">Life Starts Here.</div>
-            </div>
-            <img class="backupImg footVid" src="../media/videos/backup3.webp" alt="horses running"/>
-        </div>
-    </footer>
+      </div>
+    </div>
 
-    <div id="musicButton">♫</div>
-    <div id="youtube-player"></div>
+    <div class="vidContainer">
+      <video class="media" autoplay loop muted disablePictureInPicture>
+        <source src="../media/videos/sampleVideo2.mp4" type="video/mp4">
+      </video>
+      <div class="vidText foot">
+        <div class="title">Ready to Begin Your Recovery?</div>
+        <div class="text">Take the first step towards renewed strength, mobility,
+          and confidence. Our team is ready to create a personalized treatment
+          plan just for you.</div>
+        <a class="vidButton1 foot" href="booking.html">Schedule Your Consultation</a>
+      </div>
+    </div>
+    <img class="backupImg" src="../media/videos/backup2.webp" alt="man on tree" />
+    </div>
 
-    <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="../JS/script.js"></script>
-    <script src="../JS/hamburger.js"></script>
+  </main>
+
+  <footer>
+    <div class="footerContent">
+      <div class="footerInfo">
+        <h3>Contact</h3>
+        <div>E: chaphysicaltherapy@gmail.com</div>
+        <div>P: (646) 580-2934</div>
+        <div>F: 212-643-9330</div>
+        <div>Clinic Hours: 9AM - 7PM</div>
+      </div>
+      <div class="footerInfo location">
+        <h3>Location</h3>
+        <div>16 W 32nd Street, Suite 1007, NYC 10001</div>
+      </div>
+    </div>
+    <div class="vidContainer">
+      <video class="media" autoplay loop muted disablePictureInPicture>
+        <source src="../media/videos/footVideo.mp4" type="video/mp4">
+      </video>
+      <div class="closeText">
+        <div class="title">CHA Physical Therapy</div>
+        <div class="text">Life Starts Here.</div>
+      </div>
+      <img class="backupImg" src="../media/videos/footBackup.webp" alt="horses running" />
+    </div>
+  </footer>
+
+  <div id="musicButton">♫</div>
+  <div id="youtube-player"></div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="../JS/script.js"></script>
+  <script src="../JS/hamburger.js"></script>
+  <script src="../JS/about.js"></script>
 
 </body>
 

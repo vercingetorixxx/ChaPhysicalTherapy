@@ -1,0 +1,450 @@
+/* -------------------- VIDCONTAINERS -------------------- */
+
+
+
+.vidContainer {
+    position: relative;
+    width: var(--screenWidth);
+    height: calc(var(--screenHeight) - var(--contactBarHeight));
+}
+
+.vidContainer .media,
+.frontDesk .media {
+    width: var(--screenWidth);
+    height: calc(var(--screenHeight) - var(--contactBarHeight));
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7);
+    z-index: 0;
+}
+
+.backupImg {
+    position: absolute;
+    width: var(--screenWidth);
+    height: calc(100vh - var(--contactBarHeight));
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+
+.textBox,
+.vidText,
+.closeText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: var(--eighthUnit);
+}
+
+.vidText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vidText:not(.people) * {
+    color: var(--color1);
+    margin-bottom: var(--quarterUnit);
+}
+
+.vidText .title {
+    width: 200px;
+}
+
+.vidText .text {
+    width: 250px;
+}
+
+.text {
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+}
+
+
+
+/* -------------------- FIRST VIDCONTAINER -------------------- */
+
+
+
+.vidText.start {
+    top: calc(50% + calc(var(--navHeight) / 2.5));
+}
+
+.vidButton1 {
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--color4), var(--color3));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition: all 0.5s ease;
+}
+
+.vidButton1:hover {
+    transform: scale(1.02) translateY(-5%);
+    box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.3);
+}
+
+.vidButton2 {
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 5px solid var(--color3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 3px;
+    transition: all 0.5s ease;
+}
+
+.vidButton2:hover {
+    transform: scale(1.02) translateY(-5%);
+}
+
+#treatment1:target {
+    scroll-margin-top: 70px;
+}
+
+
+
+/* -------------------- RIVER -------------------- */
+
+
+
+.river {
+    height: 2046px !important;
+    filter: brightness(1) !important;
+}
+
+.infoBox {
+    position: absolute;
+    width: 300px;
+    background: var(--color1);
+    top: 50px;
+    left: -17px;
+    border-radius: 20px;
+    z-index: 1;
+    padding: 20px;
+    line-height: 1.4rem;
+    transition: all 0.7s ease;
+    overflow: hidden;
+}
+
+.infoBox.scrolled {
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 8px 10px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.infoBoxTitle {
+    font-size: 1.25rem;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.serviceIconContainer {
+    display: flex;
+    justify-content: start;
+}
+
+.serviceIcon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(-45deg, var(--color4), var(--color3));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.serviceFeatures {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.serviceFeatures li {
+    margin-left: -5px;
+}
+
+.serviceFeatures li::before {
+    content: '✓';
+    position: absolute;
+    left: 25px;
+    color: var(--color4);
+    font-weight: bold;
+}
+
+.serviceFeatures li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.infoBox::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background: linear-gradient(45deg, var(--color4), var(--color3));
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 1s ease;
+}
+
+.infoBox.scrolled::before {
+    transform: scaleY(1);
+}
+
+.infoBox.two {
+    top: 608px;
+}
+
+.infoBox.three {
+    top: 1122px;
+}
+
+.infoBox.four {
+    top: 1635px;
+}
+
+.infoBox.four div:nth-child(2) {
+    margin-bottom: 16px;
+}
+
+
+
+/* -------------------- MEET THE TEAM -------------------- */
+
+
+
+.meet {
+    height: 1190px !important;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    width: 300px;
+    margin: 0 auto;
+    height: 1090px;
+}
+
+.siContainer {
+    perspective: 800px;
+}
+
+.flipping {
+    z-index: 10;
+}
+
+.flipper {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    height: 100%;
+}
+
+.front,
+.back {
+    position: absolute;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+.back {
+    transform: rotateY(-180deg);
+}
+
+.arrowButton {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--containerBg);
+    width: 20px;
+    height: 40px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color1);
+}
+.back .arrowButton {
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.front .contentWrapper {
+    transition: opacity 0.1s ease;
+    transition-delay: 0.15s;
+}
+
+.flipper.flipped .front .contentWrapper {
+    opacity: 0;
+}
+
+.flipper.flipped {
+    transform: rotateY(-180deg);
+}
+
+.sectionItem {
+    padding: 30px;
+    background: var(--color1);
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 8px 10px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.flipped .front{
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    overflow: hidden;
+}
+
+.back .contentWrapper{
+    justify-content: space-between;
+    font-size: 0.85rem;
+    text-align: right;
+}
+
+.sectionItem img {
+    width: 100%;
+    height: 250px;
+    flex: 1;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.siText {
+    margin: 15px 0 0 0;
+    height: fit-content;
+}
+
+.sectionItem .position {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.resume {
+    text-align: left;
+    font-size: 0.9rem;
+    list-style: none;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.resume li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.resume li {
+    margin-left: -5px;
+}
+
+.resume li::before {
+    content: '⚕️';
+    position: absolute;
+    left: 5px;
+    color: var(--color4);
+    font-weight: bold;
+}
+
+
+
+/* -------------------- YOYO -------------------- */
+
+
+
+.yoYo {
+    width: 100%;
+    background: linear-gradient(45deg, var(--color4), var(--color3)) !important;
+    padding: 40px 100px 40px 40px;
+    position: relative;
+}
+
+.yoYoItem:not(:last-child) {
+    padding-bottom: 40px;
+}
+
+.yoYoItem {
+    padding-left: 320px;
+    transition: all 0.5s ease;
+}
+
+.yoYoItem.scrolled {
+    padding-left: 0px;
+}
+
+.yoYo * {
+    color: var(--color1);
+    text-align: left;
+}
+
+.yoYo .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.yoYo.two {
+    padding-right: 40px;
+}
+
+.yoYo.two .title {
+    margin-bottom: 0rem;
+}
+
+.yoYo.three * {
+    font-weight: bold;
+}
+
+.yoYo.three .text:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+
+
+/* -------------------- FOOTER -------------------- */
+
+
+
+.vidText.foot .title {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.vidButton1.foot {
+    width: 250px;
+    padding-bottom: 0px;
+}
+
+.closeText * {
+    color: var(--color1);
+}

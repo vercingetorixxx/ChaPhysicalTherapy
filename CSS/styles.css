@@ -35,6 +35,11 @@
 }
 
 
+
+/* -------------------- FONTS -------------------- */
+
+
+
 @font-face {
     font-family: 'marcellus';
     src: url('../fonts/Marcellus/Marcellus-Regular.ttf') format('truetype');
@@ -70,6 +75,12 @@
     font-style: italic;
 }
 
+
+
+/* -------------------- FORMATTING -------------------- */
+
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -92,13 +103,6 @@ body {
     margin: 0;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    height: 90px;
-    z-index: 9;
-}
-
 p {
     margin: 0;
 }
@@ -113,298 +117,9 @@ main {
     overflow-x: hidden;
 }
 
-.textBox, .frontText, .closeText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.frontText{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: calc(50% + calc(var(--navHeight) / 2.5));
-}
-
-.title {
-    font-size: 3rem;
-    margin-bottom: var(--eighthUnit);
-}
-
-.frontText.foot{
-    top: 50%;
-}
-
-.frontText.foot .title{
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.frontText *{
-    color: var(--color1);
-    margin-bottom: var(--quarterUnit);
-}
-
-.frontText .title{
-    width: 200px;
-}
-.frontText .text{
-    width: 250px;
-}
-
-.frontButton1{
-    width: 180px;
-    height: 50px;
-    border-radius: 50px;
-    background: linear-gradient(45deg, var(--color4), var(--color3));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    padding-bottom: 4px;
-    transition: all 0.5s ease;
-}
-.frontButton1:hover{
-    transform: scale(1.02) translateY(-5%);
-    box-shadow: 0 3px 20px 3px rgba(0, 0, 0, 0.3);
-}
-.frontButton2{
-    width: 180px;
-    height: 50px;
-    border-radius: 50px;
-    background: rgba(0,0,0,0.2);
-    border: 5px solid var(--color3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    padding-bottom: 3px;
-    transition: all 0.5s ease;
-}
-.frontButton2:hover{
-    transform: scale(1.02) translateY(-5%);
-}
-
-.frontButton1.foot{
-    width: 250px;
-    padding-bottom: 0px;
-}
-
-#treatment1:target {
-    scroll-margin-top: 70px;
-}
-
-.textBox:not(.front):not(.footer) {
-    background: var(--color1);
-    padding: 15px;
-}
-
-.closeText *{
-    color: var(--color1);
-}
-
-.yoYo{
-    width: 100%;
-    background: linear-gradient(45deg, var(--color4), var(--color3)) !important;
-    padding: 40px 100px 40px 40px;
-    position: relative;
-}
-.yoYoItem:not(:last-child){
-    padding-bottom: 40px;
-}
-
-.yoYoItem{
-    padding-left: 320px;
-    transition: all 0.5s ease;
-}
-.yoYoItem.scrolled{
-    padding-left: 0px;
-}
-
-.yoYo *{
-    color: var(--color1);
-    text-align: left;
-}
-
-.yoYo .title{
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
-.yoYo.two{
-    padding-right: 40px;
-}
-.yoYo.two .title{
-    margin-bottom: 0rem;
-}
-
-.yoYo.three .text:not(:last-child){
-    margin-bottom: 3rem;
-}
-
-.textBox.three {
-    border-radius: 40px 5px;
-}
-
-.text {
-    font-size: 0.85rem;
-    line-height: 1.4rem;
-}
-
-.textBox a {
-    display: inline-block;
-    margin-top: var(--quarterUnit);
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.7);
-    color: var(--color2);
-    border-radius: 7px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.infoBox{
-    position: absolute;
-    width: 300px;
-    background: var(--color1);
-    top: 50px;
-    left: -17px;
-    border-radius: 20px;
-    z-index: 1;
-    padding: 20px;
-    line-height: 1.4rem;
-    transition: all 0.7s ease;
-    overflow: hidden;
-}
-.infoBox.scrolled{
-    left: 50%;
-    transform: translate(-50%, 0);
-    box-shadow: 8px 10px 4px 5px rgba(0, 0, 0, 0.3);
-}
-
-.infoBoxTitle{
-    font-size: 1.25rem;
-    text-decoration: underline;
-	text-decoration-thickness: 2px;
-	text-underline-offset: 4px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.serviceIconContainer{
-    display: flex;
-    justify-content: start;
-}
-.serviceIcon{
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(-45deg, var(--color4), var(--color3));
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.serviceFeatures{
-    list-style: none;
-    margin-bottom: 0;
-}
-.serviceFeatures li{
-    margin-left: -5px;
-}
-.serviceFeatures li::before{
-    content: '✓';
-    position: absolute;
-    left: 25px;
-    color: var(--color4);
-    font-weight: bold;
-}
-.serviceFeatures li:not(:last-child){
-    margin-bottom: 10px;
-}
-
-.infoBox::before{
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 8px;
-    background: linear-gradient(45deg, var(--color4), var(--color3));
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform 1s ease;
-}
-.infoBox.scrolled::before{
-    transform: scaleY(1);
-}
-
-.infoBox.two{
-    top: 608px;
-}
-
-.infoBox.three{
-    top: 1122px;
-}
-
-.infoBox.four{
-    top: 1635px;
-}
-.infoBox.four div:nth-child(2){
-    margin-bottom: 16px;
-}
 
 
-
-.vidContainer {
-    position: relative;
-    width: var(--screenWidth);
-    height: calc(var(--screenHeight) - var(--contactBarHeight));
-}
-
-.vidContainer .media, .frontDesk .media {
-    width: var(--screenWidth);
-    height: calc(var(--screenHeight) - var(--contactBarHeight));
-    object-fit: cover;
-    display: block;
-    filter: brightness(0.7);
-    z-index: 0;
-}
-
-.footVid {
-    height: calc(100vh - 90px) !important;
-}
-
-.river{
-    height: 2046px !important;
-    filter: brightness(1) !important;
-}
-
-.textBox.three .title {
-    font-size: 2.5rem;
-}
-
-.textBox p {
-    margin-bottom: 0.25rem;
-}
-
-.backupImg {
-    position: absolute;
-    width: var(--screenWidth);
-    height: calc(100vh - var(--contactBarHeight));
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    display: block;
-    filter: brightness(0.7);
-    z-index: -1;
-}
-
+/* -------------------- MUSIC PLAYER -------------------- */
 
 
 
