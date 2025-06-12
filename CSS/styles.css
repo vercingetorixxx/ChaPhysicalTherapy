@@ -8,7 +8,7 @@
     hamIcon, musicPlayer, plusButton */
     --color4: #D98324;
     /* CTA */
-    --color5: #753c00;
+    --color5: #6e120e;
 
     --unit: 10vh;
     --halfUnit: calc(var(--unit) / 2);
@@ -22,7 +22,7 @@
     --screenWidth: 100vw;
     --linkMargin: var(--quarterWidthUnit);
     --contactBarHeight: 31.5px;
-    --containerBg: var(--color1);
+    --containerBg: rgba(0,0,0,0.5);
 }
 
 @supports(height: 1svh) {
@@ -196,7 +196,7 @@ main {
 }
 
 .textBox:not(.front):not(.footer) {
-    background: var(--containerBg);
+    background: var(--color1);
     padding: 15px;
 }
 
@@ -390,31 +390,18 @@ main {
 
 
 
-#musicPlayer{
+#musicButton{
     position: fixed;
-    right: -1px;
-    bottom: -1px;
+    right: -4px;
+    bottom: 9px;
     width: 40px;
     height: 40px;
-    border-radius: 70% 0 0 0;
-    background: rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 1;
     cursor: pointer;
+    color: var(--color2);
+    font-size: 2.5rem;
+    transition: color 2s ease;
 }
-
-#musicPlayer img{
-    position: fixed;
-    bottom: 5.5px;
-    right: 4px;
-    width: 25px;
-    height: 25px;
-    z-index: 2;
-    filter: brightness(0.5);
-    transition: filter 2s ease;
-}
-#musicPlayer.show img{
-    filter: brightness(1);
+#musicButton.show{
+    color: var(--color1);
 }
