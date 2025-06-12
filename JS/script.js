@@ -6,6 +6,7 @@ let isPlaying = false;
 let isPlayerReady = false;
 
 function onYouTubeIframeAPIReady() {
+  console.log('YouTube IFrame API is ready');
   player = new YT.Player('youtube-player', {
     height: '0',
     width: '0',
@@ -14,8 +15,13 @@ function onYouTubeIframeAPIReady() {
       autoplay: 0,
       loop: 1,
       playlist: 'dQw4w9WgXcQ' // Required for loop
+    },
+    events: {
+      'onReady': onPlayerReady, // Attach onReady handler
+      'onError': onPlayerError  // Attach onError handler
     }
   });
+  console.log('Player created');
 }
 
 function onPlayerReady(event) {
