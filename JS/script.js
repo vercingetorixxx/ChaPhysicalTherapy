@@ -52,15 +52,21 @@ musicButton.addEventListener('click', () => {
 // Dynamic InfoBoxes
 
 document.addEventListener("DOMContentLoaded", () => {
-  const targets = document.querySelectorAll(".infoBox");
+  const targets = document.querySelectorAll(".infoBox, .yoYoItem");
 
   const callback = (entries, observer) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("scrolled");
-      } else {
-        entry.target.classList.remove("scrolled");
-      }
+      // Clear any existing timeout to prevent multiple triggers
+      clearTimeout(entry.target.timeoutId);
+
+      // Set a new timeout for 100ms delay
+      entry.target.timeoutId = setTimeout(() => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("scrolled");
+        } else if (entry.target.classList.contains("infoBox")) {
+          entry.target.classList.remove("scrolled");
+        }
+      }, 30);
     });
   };
 

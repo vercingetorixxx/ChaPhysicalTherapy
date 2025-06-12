@@ -89,6 +89,7 @@ body {
     width: var(--screenWidth);
     position: relative;
     height: fit-content;
+    margin: 0;
 }
 
 nav {
@@ -210,6 +211,17 @@ main {
     background: linear-gradient(45deg, var(--color4), var(--color3)) !important;
     padding: 40px 100px 40px 40px;
     position: relative;
+}
+.yoYoItem:not(:last-child){
+    padding-bottom: 40px;
+}
+
+.yoYoItem{
+    padding-left: 320px;
+    transition: all 0.5s ease;
+}
+.yoYoItem.scrolled{
+    padding-left: 0px;
 }
 
 .yoYo *{
@@ -341,7 +353,7 @@ main {
 }
 
 .infoBox.four{
-    top: 1640px;
+    top: 1635px;
 }
 .infoBox.four div:nth-child(2){
     margin-bottom: 16px;
@@ -369,8 +381,7 @@ main {
 }
 
 .river{
-    min-height: 2080px;
-    height: calc(var(--screenHeight) * 3.4) !important;
+    height: 2046px !important;
     filter: brightness(1) !important;
 }
 
@@ -411,4 +422,8 @@ main {
 }
 #musicButton.show{
     color: var(--color1);
+}
+
+iframe{
+    position: absolute;
 }
