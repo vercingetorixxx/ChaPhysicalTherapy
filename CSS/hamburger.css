@@ -21,7 +21,6 @@
 
 .navigation {
     --scale: 0;
-    box-sizing: content-box;
     padding: 0 15px;
     position: relative;
     display: flex;

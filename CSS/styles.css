@@ -88,6 +88,7 @@ body {
     background: var(--color1);
     width: var(--screenWidth);
     position: relative;
+    height: fit-content;
 }
 
 nav {
@@ -258,7 +259,7 @@ main {
     width: 300px;
     background: var(--color1);
     top: 50px;
-    right: -17px;
+    left: -17px;
     border-radius: 20px;
     z-index: 1;
     padding: 20px;
@@ -267,8 +268,8 @@ main {
     overflow: hidden;
 }
 .infoBox.scrolled{
-    right: 50%;
-    transform: translate(50%, 0);
+    left: 50%;
+    transform: translate(-50%, 0);
     box-shadow: 8px 10px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -283,7 +284,7 @@ main {
 
 .serviceIconContainer{
     display: flex;
-    justify-content: end;
+    justify-content: start;
 }
 .serviceIcon{
     width: 50px;
@@ -318,7 +319,7 @@ main {
 .infoBox::before{
     content: '';
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     bottom: 0;
     width: 8px;
@@ -339,13 +340,19 @@ main {
     top: 1122px;
 }
 
+.infoBox.four{
+    top: 1640px;
+}
+.infoBox.four div:nth-child(2){
+    margin-bottom: 16px;
+}
+
 
 
 .vidContainer {
     position: relative;
     width: var(--screenWidth);
     height: calc(var(--screenHeight) - var(--contactBarHeight));
-    overflow-y: visible;
 }
 
 .vidContainer .media, .frontDesk .media {
@@ -362,8 +369,8 @@ main {
 }
 
 .river{
-    min-height: 1650px;
-    height: calc(var(--screenHeight) * 2.2) !important;
+    min-height: 2080px;
+    height: calc(var(--screenHeight) * 3.4) !important;
     filter: brightness(1) !important;
 }
 
