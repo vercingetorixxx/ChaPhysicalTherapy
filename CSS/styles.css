@@ -142,3 +142,13 @@ main {
 iframe{
     position: absolute;
 }
+
+
+
+/* -------------------- CLOSETEXT -------------------- */
+
+
+
+.closeText * {
+    color: var(--color1);
+}

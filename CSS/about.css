@@ -5,13 +5,12 @@
 .vidContainer {
     position: relative;
     width: var(--screenWidth);
-    height: calc(var(--screenHeight) - var(--contactBarHeight));
+    height: calc(100vh - var(--contactBarHeight));
 }
 
-.vidContainer .media,
-.frontDesk .media {
+.vidContainer .media {
     width: var(--screenWidth);
-    height: calc(var(--screenHeight) - var(--contactBarHeight));
+    height: calc(100vh - var(--contactBarHeight));
     object-fit: cover;
     display: block;
     filter: brightness(0.7);
@@ -383,22 +382,47 @@
 
 .yoYo {
     width: 100%;
-    background: linear-gradient(45deg, var(--color4), var(--color3)) !important;
-    padding: 40px 100px 40px 40px;
     position: relative;
 }
 
-.yoYoItem:not(:last-child) {
-    padding-bottom: 40px;
+.yoYoBg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .yoYoItem {
-    padding-left: 320px;
+    padding-left: 100vw;
     transition: all 0.5s ease;
+    width: 100px;
+}
+
+.yoYo .container{
+    width: 265px;
+    background: linear-gradient(to right, rgba(0,0,0,0.3) 80%, transparent);
+    padding: 20px;
+}
+
+.yoYo .text{
+    width: 220px;
+}
+
+.yoYoItem .container{
+    background: linear-gradient(to right, rgba(0,0,0,0.3) 80%, transparent);
+    width: 230px;
+    padding: 20px;
 }
 
 .yoYoItem.scrolled {
     padding-left: 0px;
+}
+
+.yoYoItem .text{
+    width: 150px;
 }
 
 .yoYo * {
@@ -413,7 +437,10 @@
 }
 
 .yoYo.two {
-    padding-right: 40px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3)
 }
 
 .yoYo.two .title {
@@ -424,13 +451,9 @@
     font-weight: bold;
 }
 
-.yoYo.three .text:not(:last-child) {
-    margin-bottom: 3rem;
-}
 
 
-
-/* -------------------- FOOTER -------------------- */
+/* -------------------- CTA VIDEO -------------------- */
 
 
 
@@ -443,8 +466,4 @@
 .vidButton1.foot {
     width: 250px;
     padding-bottom: 0px;
-}
-
-.closeText * {
-    color: var(--color1);
 }
