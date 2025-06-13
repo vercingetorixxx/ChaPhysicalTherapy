@@ -385,6 +385,12 @@
     position: relative;
 }
 
+.yoYo.one {
+    background-image: url('../media/images/therapyImg1.webp');
+    background-size: cover;
+    background-position: center;
+}
+
 .yoYoBg {
     position: absolute;
     z-index: -1;
