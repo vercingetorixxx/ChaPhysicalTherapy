@@ -115,6 +115,7 @@ main {
     margin-top: var(--contactBarHeight);
     width: var(--screenWidth);
     overflow-x: hidden;
+    position: relative;
 }
 
 
@@ -141,14 +142,4 @@ main {
 
 iframe{
     position: absolute;
-}
-
-
-
-/* -------------------- CLOSETEXT -------------------- */
-
-
-
-.closeText * {
-    color: var(--color1);
 }

@@ -41,7 +41,6 @@
 
 .title {
     font-size: 3rem;
-    margin-bottom: var(--eighthUnit);
 }
 
 .vidText {
@@ -52,7 +51,7 @@
 
 .vidText:not(.people) * {
     color: var(--color1);
-    margin-bottom: var(--quarterUnit);
+    margin-bottom: 1.2rem;
 }
 
 .vidText .title {
@@ -73,6 +72,10 @@
 /* -------------------- FIRST VIDCONTAINER -------------------- */
 
 
+
+.vidContainer.start, .media.start{
+    height: calc(var(--screenHeight) - var(--contactBarHeight));
+}
 
 .vidText.start {
     top: calc(50% + calc(var(--navHeight) / 2.5));
@@ -358,11 +361,8 @@
     position: relative;
 }
 
-.resume li:not(:last-child) {
-    margin-bottom: 10px;
-}
-
 .resume li {
+    margin-top: 10px;
     margin-left: -5px;
 }
 
@@ -460,7 +460,6 @@
 .vidText.foot .title {
     font-size: 2.5rem;
     line-height: 3.5rem;
-    margin-bottom: 1rem;
 }
 
 .vidButton1.foot {

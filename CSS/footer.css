@@ -23,6 +23,5 @@ footer .textBox * {
     color: var(--color1);
 }
 footer .text{
-    margin-top: var(--halfUnit);
     font-size: 1.3rem !important;
 }

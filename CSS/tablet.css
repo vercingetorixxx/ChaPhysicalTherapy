@@ -1,0 +1,200 @@
+@media (min-width: 768px) {
+    :root{
+        --contactBarHeight: 50px;
+        --navHeight: 75px;
+    }
+
+    nav {
+        height: 125px;
+    }
+
+    .contactBar {
+        font-size: 1.2rem;
+        padding: 0 25px;
+    }
+    .contactBar img{
+        height: 25px;
+    }
+
+    .navigation{
+        padding: 0 25px;
+    }
+
+    .logoContainer {
+        width: 172px;
+        height: 55px;
+        border-radius: 55px;
+    }
+
+    .logoContainer img{
+        width: 137.5px;
+    }
+
+    .hamIcon{
+        width: 55px;
+        height: 55px;
+    }
+    .hamIcon .hamLine{
+        left: 5px;
+        height: 4px;
+    }
+    .hamIcon .hamLine:nth-child(2) { top: 25px };
+    .hamIcon .hamLine:nth-child(3) { top: 45px };
+    .checked .hamLine:nth-child(1) { top: 25px };
+    .checked .hamLine:nth-child(3) { top: 25px };
+
+    .hamburger{
+        height: calc(var(--screenHeight) - 125px);
+    }
+
+    .book {
+        height: 55px;
+        border-radius: 55px;
+        font-size: 1.3rem;
+        padding: 0 15px;
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    .vidText .title {
+        width: 300px;
+    }
+
+    .vidText .text {
+        width: 350px;
+    }
+
+    .text {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .vidText.foot .title {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    .vidText:not(.people) * {
+        margin-bottom: 2.5rem;
+    }
+
+    .vidButton1, .vidButton2 {
+        width: 270px;
+        font-size: 1.5rem;
+        height: 70px;
+    }
+
+    .vidButton1.foot {
+        width: 250px;
+    }
+
+    .yoYo:not(.three) {
+        width: 80%;
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .yoYo.one{
+        top: 1075px;
+        padding: 20px;
+    }
+
+    .yoYo .yoYoBg{
+        border-radius: 20px;
+    }
+
+    .yoYo .container{
+        width: 310px;
+        background: rgba(0,0,0,0.3);
+        border-radius: 20px;
+    }
+
+    .yoYo .text{
+        width: 270px;
+    }
+
+    .yoYo.two{
+        margin-top: 100px;
+        border-radius: 20px;
+        width: 450px;
+    }
+
+    .yoYo.two .yoYoBg{
+        border-radius: 20px;
+    }
+
+    .river {
+        height: 2507px !important;
+    }
+
+    .infoBox {
+        width: 400px;
+        top: 595px;
+    }
+    .infoBox.two {
+        top: 1116px;
+    }
+
+    .infoBox.three {
+        top: 1592px;
+    }
+
+    .infoBox.four {
+        top: 2090px;
+    }
+
+    .infoBox *:not(.infoBoxTitle) {
+        font-size: 1.1rem;
+    }
+
+    .infoBoxTitle {
+        font-size: 1.6rem;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 8px;
+        margin-bottom: 20px;
+    }
+
+    .meet {
+        height: 1218px !important;
+    }
+
+    .siContainer {
+        height: 360px;
+    }
+
+    .section {
+        width: 550px;
+        gap: 100px;
+        height: fit-content;
+        margin-top: 195px;
+    }
+
+    .sectionItem img{
+        flex: none;
+        height: 300px;
+        width: 250px;
+    }
+    .contentWrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 300px;
+        width: 100%;
+    }
+    .siText{
+        margin: 0;
+        width: 220px;
+    }
+    .sectionItem .position{
+        font-size: 1.5rem;
+    }
+
+    .resume li{
+        font-size: 1.05rem;
+        margin-top: 25px;
+    }
+
+}

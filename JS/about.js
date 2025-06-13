@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     setTimeout(() => {
                         state.isAnimating = false;
                         stateMap.set(entry.target, state);
-                    }, 500);
+                    }, 250);
                 }, 100);
                 stateMap.set(entry.target, state);
             } else if (!entry.target.classList.contains("yoYoItem") && !state.isAnimating) {
